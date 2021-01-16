@@ -2,6 +2,7 @@ package com.apakhun.arabicverbstestssecond.views.adapters;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -27,7 +28,7 @@ import com.apakhun.arabicverbstestssecond.fragments.ParentFragment;
 import com.apakhun.arabicverbstestssecond.fragments.TestFragment;
 import com.apakhun.arabicverbstestssecond.model.Tests;
 import com.apakhun.arabicverbstestssecond.model.Verb;
-import com.apakhun.arabicverbstestssecond.model.verbs.time.time.TimeVerb;
+import com.apakhun.arabicverbstestssecond.model.TimeVerb;
 import com.apakhun.arabicverbstestssecond.viewmodel.TestViewModel;
 import com.apakhun.arabicverbstestssecond.views.ProgressPieChart;
 import com.apakhun.arabicverbstestssecond.views.VerbImageFrameLayout;
@@ -39,6 +40,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     private Tests data;
     private Context context;
     public static final int EXPANDABLE_VIEW_TYPE = 0;
+    public static final int DOUBLEWORD_VIEW_TYPE = 2;
     public static final int DEFAULT_VIEW_TYPE = 1;
     private Cache cache;
     private boolean isFirstVerbsPassed, isSecondVerbsPassed, isThirdVerbsPassed, isFourthVerbsPassed;
@@ -71,7 +73,8 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     @Override
     public DefaultViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         this.context = viewGroup.getContext();
-        if (viewType == EXPANDABLE_VIEW_TYPE) {
+        if (viewType==DOUBLEWORD_VIEW_TYPE) return new DoubleWordHolder(LayoutInflater.from(context).inflate(R.layout.item_test_expandable, viewGroup, false));
+        else if (viewType == EXPANDABLE_VIEW_TYPE) {
             return new ExpandableViewHolder(LayoutInflater.from(context).inflate(R.layout.item_test_expandable, viewGroup, false));
         }
         return new DefaultViewHolder(LayoutInflater.from(context).inflate(R.layout.item_test, viewGroup, false));
@@ -83,62 +86,10 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         Verb verb = data.getVerbs().get(position);
         verbTmp = verb;
         Tests.Progress progress = data.getProgress();
+        viewHolder.bind(verbTmp,progress,position);
         if (viewHolder.getItemViewType() == EXPANDABLE_VIEW_TYPE) {
-            ExpandableViewHolder holder = (ExpandableViewHolder) viewHolder;
-            holder.expandableLayout.setExpanded(expandState.get(position));
-            holder.expandableLayout.setListener(new ExpandableLayoutListenerAdapter() {
-                @Override
-                public void onPreOpen() {
-                    expandState.put(position, true);
-                }
-
-                @Override
-                public void onPreClose() {
-                    expandState.put(position, false);
-                }
-            });
-
-            holder.vItemRow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    holder.expandableLayout.toggle();
-                }
-            });
-
-            TimeVerb timeVerb = (TimeVerb) verb;
-
-            holder.frPastTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.PAST));
-            holder.frPresentTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.PRESENT));
-            holder.frFutureTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.FUTURE));
-
-            int pastAnswered = progress.getSucceed(timeVerb, TimeVerb.Time.PAST);
-            int presentAnswered = progress.getSucceed(timeVerb, TimeVerb.Time.PRESENT);
-            int futureAnswered = progress.getSucceed(timeVerb, TimeVerb.Time.FUTURE);
-
-            int pastFailed = progress.getFailed(timeVerb, TimeVerb.Time.PAST);
-            int presentFailed = progress.getFailed(timeVerb, TimeVerb.Time.PRESENT);
-            int futureFailed = progress.getFailed(timeVerb, TimeVerb.Time.FUTURE);
-
-            holder.piePastChart.setSucceedCount(pastAnswered);
-            holder.piePresentChart.setSucceedCount(presentAnswered);
-            holder.pieFutureChart.setSucceedCount(futureAnswered);
-
-            holder.piePastChart.setFailedCount(pastFailed);
-            holder.piePresentChart.setFailedCount(presentFailed);
-            holder.pieFutureChart.setFailedCount(futureFailed);
-
-            holder.piePastChart.setTotalQuestions(timeVerb.getPastVerb().getPhrases().size());
-            holder.piePresentChart.setTotalQuestions(timeVerb.getPresentVerb().getPhrases().size());
-            holder.pieFutureChart.setTotalQuestions(timeVerb.getFutureVerb().getPhrases().size());
-
-            int totalAnswered = pastAnswered + presentAnswered + futureAnswered;
-            int totalFailed = pastFailed + presentFailed + futureFailed;
-            holder.pieChart.setSucceedCount(totalAnswered);
-            holder.pieChart.setFailedCount(totalFailed);
-            holder.pieChart.setTotalQuestions(verb.getPhrases().size());
-
         } else if (viewHolder.getItemViewType() == DEFAULT_VIEW_TYPE) {
-            DefaultViewHolder holder = viewHolder;
+            /*DefaultViewHolder holder = viewHolder;
 
             holder.pieChart.setSucceedCount(progress.getSucceed(verb, TimeVerb.Time.COMMON));
             holder.pieChart.setFailedCount(progress.getFailed(verb, TimeVerb.Time.COMMON));
@@ -146,25 +97,15 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
 
 
 
-            holder.clTestItem.setOnClickListener((v) -> toTestFragment(verb, TimeVerb.Time.COMMON));
+            holder.clTestItem.setOnClickListener((v) -> toTestFragment(verb, TimeVerb.Time.COMMON));*/
         }
 
-        viewHolder.tvVerb.setText(verb.getVerbText());
-        viewHolder.frPic.setImage(verb.pictureResourceId());
-
-        viewHolder.btnSound.setOnClickListener((v) -> Sounder.sound(verb.soundResourcePath() + "/1.mp3"));
-        viewHolder.btnLock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(App.getAppContext(), App.getRes().getString(R.string.lock_pass_available_tests), Toast.LENGTH_SHORT).show();
-            }
-        });
 
         blockSomeTests(position, viewHolder, progress);
     }
 
     private void blockSomeTests(int position, DefaultViewHolder viewHolder, Tests.Progress progress){
-        //Главная функция, которая блокирует/разблокирует различные уровни + в классе Tests есть метод checkForUnlocks(). Он вызывается каждый раз, когда пользователь успешно проходит тест.
+        //TODO Главная функция, которая блокирует/разблокирует различные уровни + в классе Tests есть метод checkForUnlocks(). Он вызывается каждый раз, когда пользователь успешно проходит тест.
 
         //Ниже комментарии, которые я использовал для тестирования
 //        Verb v1 = data.getVerbs().get(0);
@@ -273,23 +214,12 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         }
     }
 
-    private void toTestFragment(Verb verb, TimeVerb.Time time) {
-        ViewModelProviders.of(activity).get(TestViewModel.class).putSelectedVerb(verb, time, data.getProgress());
-        Bundle bundle = new Bundle();
-        bundle.putParcelable(Verb.class.getCanonicalName(), verb);
-        bundle.putInt(TimeVerb.Time.class.getCanonicalName(), time.ordinal());
-
-        TestFragment testFragment = ParentFragment.getInstance(activity, TestFragment.class, bundle);
-        testFragment.open();
-    }
-
     @Override
     public int getItemViewType(int position) {
-        //if (position + 1 <= Tests.TestsConfig.FIRST_VERBS_WITH_SEPARATE_TIME)
-        if(position == 0 || position == 4 || position == 8 || position == 11)
-            return EXPANDABLE_VIEW_TYPE;
-        else
-            return DEFAULT_VIEW_TYPE;
+        //if (position + 1 <= Tests.TestsConfig.FIRST_VERBS_WITH_SEPARATE_TIME 3,14)
+        if (position == 3 || position ==14) return DOUBLEWORD_VIEW_TYPE;
+        else if (position == 0  || position == 4 || position == 9 || position == 12) return EXPANDABLE_VIEW_TYPE;
+        else return DEFAULT_VIEW_TYPE;
     }
 
     @Override
@@ -299,13 +229,15 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         return data.getCountVerbs();
     }
 
-    public static class DefaultViewHolder extends RecyclerView.ViewHolder {
+    public class DefaultViewHolder extends RecyclerView.ViewHolder {
         public ImageButton btnSound;
         public ImageButton btnLock;
         public ProgressPieChart pieChart;
         public TextView tvVerb;
         public VerbImageFrameLayout frPic;
         public ConstraintLayout clTestItem;
+        protected Verb verb;
+        protected Tests.Progress progress;
 
         DefaultViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -318,9 +250,42 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
 
             pieChart.initChart();
         }
+
+        public void bind(Verb verb,Tests.Progress progress,int position){
+            this.verb=verb;
+            this.progress=progress;
+            setupCommonSettings(position);
+            tvVerb.setText(verb.getVerbText());
+            frPic.setImage(verb.pictureResourceId());
+
+            btnSound.setOnClickListener((v) -> Sounder.sound(verb.soundResourcePath() + "/1.mp3"));
+            btnLock.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(App.getAppContext(), App.getRes().getString(R.string.lock_pass_available_tests), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        protected void setupCommonSettings(int position){
+            pieChart.setSucceedCount(progress.getSucceed(verb, TimeVerb.Time.COMMON));
+            pieChart.setFailedCount(progress.getFailed(verb, TimeVerb.Time.COMMON));
+            pieChart.setTotalQuestions(verb.getPhrases().size());
+            clTestItem.setOnClickListener((v) -> toTestFragment(verb, TimeVerb.Time.COMMON));
+        }
+
+        protected void toTestFragment(Verb verb, TimeVerb.Time time) {
+            ViewModelProviders.of(activity).get(TestViewModel.class).putSelectedVerb(verb, time, data.getProgress());
+            Bundle bundle = new Bundle();
+            bundle.putParcelable(Verb.class.getCanonicalName(), verb);
+            bundle.putInt(TimeVerb.Time.class.getCanonicalName(), time.ordinal());
+
+            TestFragment testFragment = ParentFragment.getInstance(activity, TestFragment.class, bundle);
+            testFragment.open();
+        }
     }
 
-    public static class ExpandableViewHolder extends DefaultViewHolder {
+    public class ExpandableViewHolder extends DefaultViewHolder {
         public ExpandableLinearLayout expandableLayout;
         public FrameLayout frPastTime;
         public FrameLayout frPresentTime;
@@ -353,7 +318,72 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             expandableLayout.setInterpolator(interpolator);
         }
 
+        @Override
+        protected void setupCommonSettings(int position) {
+            expandableLayout.setExpanded(expandState.get(position));
+            expandableLayout.setListener(new ExpandableLayoutListenerAdapter() {
+                @Override
+                public void onPreOpen() {
+                    expandState.put(position, true);
+                }
+
+                @Override
+                public void onPreClose() {
+                    expandState.put(position, false);
+                }
+            });
+
+            vItemRow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    expandableLayout.toggle();
+                }
+            });
+
+            frPastTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.PAST));
+            frPresentTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.PRESENT));
+            frFutureTime.setOnClickListener((v)->toTestFragment(verb, TimeVerb.Time.FUTURE));
+
+            int pastAnswered = progress.getSucceed(verb, TimeVerb.Time.PAST);
+            int presentAnswered = progress.getSucceed(verb, TimeVerb.Time.PRESENT);
+            int futureAnswered = progress.getSucceed(verb, TimeVerb.Time.FUTURE);
+
+            int pastFailed = progress.getFailed(verb, TimeVerb.Time.PAST);
+            int presentFailed = progress.getFailed(verb, TimeVerb.Time.PRESENT);
+            int futureFailed = progress.getFailed(verb, TimeVerb.Time.FUTURE);
+
+            piePastChart.setSucceedCount(pastAnswered);
+            piePresentChart.setSucceedCount(presentAnswered);
+            pieFutureChart.setSucceedCount(futureAnswered);
+
+            piePastChart.setFailedCount(pastFailed);
+            piePresentChart.setFailedCount(presentFailed);
+            pieFutureChart.setFailedCount(futureFailed);
+
+            piePastChart.setTotalQuestions(((TimeVerb)verb).getPastVerb().getPhrases().size());
+            piePresentChart.setTotalQuestions(((TimeVerb)verb).getPresentVerb().getPhrases().size());
+            pieFutureChart.setTotalQuestions(((TimeVerb)verb).getFutureVerb().getPhrases().size());
+
+            int totalAnswered = pastAnswered + presentAnswered + futureAnswered;
+            int totalFailed = pastFailed + presentFailed + futureFailed;
+            pieChart.setSucceedCount(totalAnswered);
+            pieChart.setFailedCount(totalFailed);
+            pieChart.setTotalQuestions(verb.getPhrases().size());
+        }
+    }
+
+    public class DoubleWordHolder extends ExpandableViewHolder{
+
+        public TextView pastTextView;
+        public TextView presentTextView;
+        public TextView futureTextView;
+
+        DoubleWordHolder(@NonNull View itemView) {
+                super(itemView);
+                Log.d("tut_mipmap", String.valueOf(getAdapterPosition()));
+                btnSound.setImageResource(R.mipmap.two);
+                //TODO тут меняются даблворды
+        }
     }
 
 }
-

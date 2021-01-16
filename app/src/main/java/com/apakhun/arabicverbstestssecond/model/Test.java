@@ -2,8 +2,6 @@ package com.apakhun.arabicverbstestssecond.model;
 
 import android.util.Log;
 
-import com.apakhun.arabicverbstestssecond.model.verbs.time.time.TimeVerb;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

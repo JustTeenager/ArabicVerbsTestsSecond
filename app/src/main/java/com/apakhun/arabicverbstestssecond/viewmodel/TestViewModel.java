@@ -10,7 +10,7 @@ import com.apakhun.arabicverbstestssecond.controllers.Cache;
 import com.apakhun.arabicverbstestssecond.model.Test;
 import com.apakhun.arabicverbstestssecond.model.Tests;
 import com.apakhun.arabicverbstestssecond.model.Verb;
-import com.apakhun.arabicverbstestssecond.model.verbs.time.time.TimeVerb;
+import com.apakhun.arabicverbstestssecond.model.TimeVerb;
 import com.google.gson.reflect.TypeToken;
 
 public class TestViewModel extends ViewModel {

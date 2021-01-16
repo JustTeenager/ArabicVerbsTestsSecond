@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_leave">
+  <string name="description_leave" translatable="false">
         оставлять (a) - وَدَعَ
         leave (a) - وَدَعَ
     </string>
@@ -16,7 +16,7 @@
     <item>We leave # Мы оставляем # نَدَعُ</item>
     <item>We are left # Нас оставляют # نُودَعُ</item>
     <item>We will leave # Мы будем оставлять # سَنَدَعُ</item>
-    <item>Let's leave together! # Давайте оставим все вместе! # لِنَدَعْ</item>
+    <item>Let\'s leave together! # Давайте оставим все вместе! # لِنَدَعْ</item>
     <item>She left # Она оставляла # وَدَعَتْ</item>
     <item>She was left # Её оставляли # وُدِعَتْ</item>
     <item>She leaves # Она оставляет # تَدَعُ</item>

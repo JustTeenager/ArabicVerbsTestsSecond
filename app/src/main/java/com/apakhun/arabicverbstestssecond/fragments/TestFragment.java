@@ -22,7 +22,7 @@ import com.apakhun.arabicverbstestssecond.model.Question;
 import com.apakhun.arabicverbstestssecond.model.Test;
 import com.apakhun.arabicverbstestssecond.model.Tests;
 import com.apakhun.arabicverbstestssecond.model.Verb;
-import com.apakhun.arabicverbstestssecond.model.verbs.time.time.TimeVerb;
+import com.apakhun.arabicverbstestssecond.model.TimeVerb;
 import com.apakhun.arabicverbstestssecond.viewmodel.TestViewModel;
 import com.apakhun.arabicverbstestssecond.viewmodel.TestsViewModel;
 import com.apakhun.arabicverbstestssecond.views.SelectionsView;
