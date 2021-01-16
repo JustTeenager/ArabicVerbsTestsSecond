@@ -17,6 +17,21 @@ import com.apakhun.arabicverbstestssecond.model.verbs.Supply;
 import com.apakhun.arabicverbstestssecond.model.verbs.Surround;
 import com.apakhun.arabicverbstestssecond.model.verbs.Touch;
 import com.apakhun.arabicverbstestssecond.model.verbs.Win;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Clothe;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Decorate;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Discover;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Dread;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.DryAndWake;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Give;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Heal;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Invite;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Leave;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Meet;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Protect;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Select;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.SlackenAndPhilosophize;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Trust;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Visit;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Ask;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Hide;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Return;
@@ -71,37 +86,52 @@ public abstract class Verb implements Parcelable {
         public Verb createFromParcel(Parcel source) {
             switch (flag) {
                 case 0:
-                    return new Return(source);
+                    //return new Return(source);
+                    return new Discover(source);
                 case 1:
-                    return new Touch(source);
+                    //return new Touch(source);
+                    return new Leave(source);
                 case 2:
-                    return new Win(source);
+                    //return new Win(source);
+                    return new Trust(source);
                 case 3:
-                    return new Love(source);
+                    //return new Love(source);
+                    return new DryAndWake(source);
                 case 4:
-                    return new Reward(source);
+                    //return new Reward(source);
+                    return new Give(source);
                 case 5:
-                    return new Listen(source);
+                    //return new Listen(source);
+                    return new Decorate(source);
                 case 6:
-                    return new Surround(source);
+                    //return new Surround(source);
+                    return new Visit(source);
                 case 7:
-                    return new Despise(source);
+                  //  return new Despise(source);
+                    return new Select(source);
                 case 8:
-                    return new Ask(source);
+                    //return new Ask(source);
+                    return new Dread(source);
                 case 9:
-                    return new Pity(source);
+                    //return new Pity(source);
+                    return new Protect(source);
                 case 10:
-                    return new Supply(source);
+                    //return new Supply(source);
+                    return new Heal(source);
                 case 11:
-                    return new Hide(source);
+                    //return new Hide(source);
+                    return new Meet(source);
                 case 12:
-                    return new Help(source);
+                    //return new Help(source);
+                    return new Clothe(source);
                 case 13:
-                    return new Obey(source);
+                    //return new Obey(source);
+                    return new Invite(source);
                 case 14:
-                    return new Soothe(source);
+                    //return new Soothe(source);
+                    return new SlackenAndPhilosophize(source);
 
-                    default: return new Return(source);
+                    default: return new Discover(source);
             }
         }
 

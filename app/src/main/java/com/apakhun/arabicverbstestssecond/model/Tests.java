@@ -11,6 +11,21 @@ import com.apakhun.arabicverbstestssecond.model.verbs.Supply;
 import com.apakhun.arabicverbstestssecond.model.verbs.Surround;
 import com.apakhun.arabicverbstestssecond.model.verbs.Touch;
 import com.apakhun.arabicverbstestssecond.model.verbs.Win;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Clothe;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Decorate;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Discover;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Dread;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.DryAndWake;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Give;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Heal;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Invite;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Leave;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Meet;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Protect;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Select;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.SlackenAndPhilosophize;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Trust;
+import com.apakhun.arabicverbstestssecond.model.verbs.thirdpart.Visit;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Ask;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Hide;
 import com.apakhun.arabicverbstestssecond.model.verbs.time.time.Return;
@@ -38,7 +53,7 @@ public class Tests {
 
         //TODO поменять порядок
         verbs = new ArrayList<>(TestsConfig.MAX_COUNT_VERBS);
-        verbs.add(new Return());
+        /*verbs.add(new Return());
         verbs.add(new Touch());
         verbs.add(new Win());
         verbs.add(new Love());
@@ -52,7 +67,23 @@ public class Tests {
         verbs.add(new Hide());
         verbs.add(new Help());
         verbs.add(new Obey());
-        verbs.add(new Soothe());
+        verbs.add(new Soothe());*/
+        verbs.add(new Discover());
+        verbs.add(new Leave());
+        verbs.add(new Trust());
+        verbs.add(new DryAndWake());
+        verbs.add(new Give());
+        verbs.add(new Decorate());
+        verbs.add(new Visit());
+        verbs.add(new Select());
+        verbs.add(new Dread());
+        verbs.add(new Protect());
+        verbs.add(new Heal());
+        verbs.add(new Meet());
+        verbs.add(new Clothe());
+        verbs.add(new Invite());
+        verbs.add(new SlackenAndPhilosophize());
+
 
 //         test for unlocking tests
         /*progress = new Progress();
