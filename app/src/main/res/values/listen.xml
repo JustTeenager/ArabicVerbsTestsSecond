@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_listen">
+        слушать (а) - أَذِنَ\n 
+        listen (а) - أَذِنَ
+    </string>
+  <string-array name="listen">
+    <item>He listened # Он слушал # أَذِنَ</item>
+    <item>He listens # Он слушает # يَأْذَنُ</item>
+    <item>Their (two men) were listened # Их (двоих мужчин) слушали # أُذِنَا</item>
+    <item>They (all men) listened # Они (все мужчины) слушали # أَذِنُوا</item>
+    <item>He is listened # Его слушают # يُؤْذَنُ</item>
+    <item>They (two men) listen # Они (двое мужчин) слушают # يَأْذَنَانِ</item>
+    <item>Their (all men) were listened # Их (всех мужчин) слушали # أُذِنُوا</item>
+    <item>She listened # Она слушала # أَذِنَتْ</item>
+    <item>Their (two men) are listened # Их (двоих мужчин) слушают # يُؤْذَنَانِ</item>
+    <item>They (all men) listen # Они (все мужчины) слушают # يَأْذَنُونَ</item>
+    <item>She was listened # Её слушали # أُذِنَتْ</item>
+    <item>They (two women) listened # Они (две женщины) слушали # أَذِنَتَا</item>
+    <item>Their (all men) are listened # Их (всех мужчин) слушают # يُؤْذَنُونَ</item>
+    <item>She listens # Она слушает # تَأْذَنُ</item>
+    <item>Their (two women) were listened # Их (двух женщин) слушали # أُذِنَتَا</item>
+    <item>They (all women) listened # Они (все женщины) слушали # أَذِنَّ</item>
+    <item>She is listened # Её слушают # تُؤْذَنُ</item>
+    <item>They (two women) listen # Они (две женщины) слушают # تَأْذَنَانِ</item>
+    <item>Their (all women) were listened # Их (всех женщин) слушали # أُذِنَّ</item>
+    <item>You (man) listened # Ты (мужчина) слушал # أَذِنْتَ</item>
+    <item>Their (two women) are listened # Их (двух женщин) слушают # تُؤْذَنَانِ</item>
+    <item>They (all women) listen # Они (все женщины) слушают # يَأْذَنَّ</item>
+    <item>You (man) were listened # Тебя (мужчину) слушали # أُذِنْتَ</item>
+    <item>You (two men) listened # Вы (двое мужчин) слушали # أَذِنْتُمَا </item>
+    <item>Let her listen! (Imperative) # Пусть она слушает! # لِتَأْذَنْ</item>
+    <item>They (two women) will listen # Они (две женщины) будут слушать # سَتَأْذَنَانِ</item>
+    <item>Their (all women) are listened # Их (всех женщин) слушают # يُؤْذَنَّ</item>
+    <item>You (man) listen # Ты (мужчина) слушаешь # تَأْذَنُ</item>
+    <item>You (two men) were listened # Вас (двоих мужчин) слушали # أُذِنْتُمَا</item>
+    <item>You (all men) listened # Вы (все мужчины) слушали # أَذِنْتُمْ</item>
+    <item>Let them (two women) listen! (Imperative) # Пусть они (две женщины) слушают! # لِتَأْذَنَا</item>
+    <item>They (all women) will listen # Они (все женщины) будут слушать # سَيَأْذَنَّ</item>
+    <item>You (man) are listened # Тебя (мужчину) слушают # تُؤْذَنُ</item>
+    <item>You (two men) listen # Вы (двое мужчин) слушаете # تَأْذَنَانِ</item>
+    <item>You (all men) were listened # Вас (всех мужчин) слушали # أُذِنْتُمْ</item>
+    <item>You (woman) listened # Ты (женщина) слушала # أَذِنْتِ</item>
+    <item>Let them (all women) listen! (Imperative) # Пусть они (все женщины) слушают! # لِيَأْذَنَّ</item>
+    <item>You (man) will listen # Ты (мужчина) будешь слушать # سَتَأْذَنُ</item>
+    <item>You (two men) are listened # Вас (двоих мужчин) слушают # تُؤْذَنَانِ</item>
+    <item>You (all men) listen # Вы (все мужчины) слушаете # تَأْذَنُونَ</item>
+    <item>You (woman) were listened # Тебя (женщину) слушали # أُذِنْتِ</item>
+    <item>You (two women) listened # Вы (две женщины) слушали # أَذِنْتُمَا</item>
+    <item>Listen (man)! (Imperative) # Слушай (мужчине)! # اِيذَنْ</item>
+    <item>You (all men) are listened # Вас (всех мужчин) слушают # تُؤْذَنُونَ</item>
+    <item>You (woman) listen # Ты (женщина) слушаешь # تَأْذَنِينَ</item>
+    <item>You (two women) were listened # Вас (двух женщин) слушали # أُذِنْتُمَا</item>
+    <item>You (all women) listened # Вы (все женщины) слушали # أَذِنْتُنَّ</item>
+    <item>Listen (two men)! (Imperative) # Слушайте (двум мужчинам)! # اِيذَنَا</item>
+    <item>You (woman) are listened # Тебя (женщину) слушают # تُؤْذَنِينَ</item>
+    <item>You (two women) listen # Вы (две женщины) слушаете # تَأْذَنَانِ</item>
+    <item>You (all women) were listened # Вас (всех женщин) слушали # أُذِنْتُنَّ</item>
+    <item>I listened # Я слушал # أَذِنْتُ</item>
+    <item>Listen (all men)! (Imperative) # Слушайте (всем мужчинам)! # اِيذَنُوا</item>
+    <item>He was listened # Его слушали # أُذِنَ</item>
+    <item>You (two women) are listened # Вас (двух женщин) слушают # تُؤْذَنَانِ</item>
+    <item>You (all women) listen # Вы (все женщины) слушаете # تَأْذَنَّ</item>
+    <item>I was listened # Меня слушали # أُذِنْتُ</item>
+    <item>We listened # Мы слушали # أَذِنَّا</item>
+    <item>Listen (woman)! (Imperative) # Слушай (женщине)! # اِيذَنِي</item>
+    <item>You (all women) are listened # Вас (всех женщин) слушают # تُؤْذَنَّ</item>
+    <item>I listen # Я слушаю # آذَنُ</item>
+    <item>We were listened # Нас слушали # أُذِنَّا</item>
+    <item>Listen (two women)! (Imperative) # Слушайте (двум женщинам)! # اِيذَنَا</item>
+    <item>I am listened # Меня слушают # أُوذَنُ</item>
+    <item>We listen # Мы слушаем # نَأْذَنُ</item>
+    <item>Listen (all women)! (Imperative) # Слушайте (всем женщинам)! # اِيذَنَّ</item>
+    <item>I will listen # Я буду слушать # سَآذَنُ</item>
+    <item>We are listened # Нас слушают # نُؤْذَنُ</item>
+    <item>They (two men) listened # Они (двое мужчин) слушали # أَذِنَا</item>
+    <item>Let him listen! (Imperative) # Пусть он слушает! # لِيَأْذَنْ</item>
+  </string-array>
+</resources>

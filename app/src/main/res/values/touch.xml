@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_touch">
+        трогать, (при)касаться (и/a) - مَسَّ\n
+        touch (i/a) - مَسَّ
+    </string>
+  <string-array name="touch">
+    <item>He touched # Он трогал # مَسَّ</item>
+    <item>Their (all men) were touched # Их (всех мужчин) касались # مُسُّوا</item>
+    <item>They (two women) touch # Они (две женщины) трогают # تَمَسَّانِ</item>
+    <item>You (man) are touched # Тебя (мужчину) касаются # تُمَسُّ</item>
+    <item>You (all men) will touch # Вы (все мужчины) будете трогать # سَتَمَسُّونَ</item>
+    <item>Touch (two women)! (Imperative) # Касайтесь (двум женщинам)! # مَسَّا</item>
+    <item>They (two men) touched # Они (двое мужчин) трогали # مَسَّا</item>
+    <item>She was touched # Её касались # مُسَّتْ</item>
+    <item>They (all women) touch # Они (все женщины) трогают # يَمْسَسْنَ</item>
+    <item>You (two men) are touched # Вас (двоих мужчин) касаются # تُمَسَّانِ</item>
+    <item>You (woman) will touch # Ты (женщина) будешь трогать # سَتَمَسِّينَ</item>
+    <item>Touch (all women)! (Imperative) # Трогайте (всем женщинам)! # اِمْسَسْنَ</item>
+    <item>They (all men) touched # Они (все мужчины) трогали # مَسُّوا</item>
+    <item>Their (two women) were touched # Их (двух женщин) касались # مُسَّتَا</item>
+    <item>You (man) touch # Ты (мужчина) трогаешь # تَمَسُّ</item>
+    <item>You (all men) are touched # Вас (всех мужчин) касаются # تُمَسُّونَ</item>
+    <item>You (two women) will touch # Вы (две женщины) будете трогать # سَتَمَسَّانِ</item>
+    <item>Let me touch! (Imperative) # Давайте я потрогаю! # لِأَمَسُّ</item>
+    <item>She touched # Она касалась # مَسَّتْ</item>
+    <item>Their (all women) were touched # Их (всех женщин) касались # مُسِسْنَ</item>
+    <item>You (two men) touch # Вы (двое мужчин) касаетесь # تَمَسَّانِ</item>
+    <item>You (woman) are touched # Тебя (женщину) касаются # تُمَسِّينَ</item>
+    <item>You (all women) will touch # Вы (все женщины) будете трогать # سَتَمْسَسْنَ</item>
+    <item>Let is touch together! (Imperative) # Давайте касаться вместе! # لِنَمَسُّ</item>
+    <item>They (two women) touched # Они (две женщины) трогали # مَسَّتَا</item>
+    <item>You (man) were touched # Тебя (мужчину) касались # مُسِسْتَ</item>
+    <item>You (all men) touch # Вы (все мужчины) трогаете # تَمَسُّونَ</item>
+    <item>You (two women) are touched # Вас (двух женщин) касаются # تُمَسَّانِ </item>
+    <item>I will touch # Я буду касаться # سَأَمَسُّ</item>
+    <item>They (all women) touched # Они (все женщины) трогали # مَسِسْنَ</item>
+    <item>You (two men) were touched # Вас (двоих мужчин) касались # مُسِسْتُمَا</item>
+    <item>You (woman) touch # Ты (женщина) трогаешь # تَمَسِّينَ</item>
+    <item>You (all women) are touched # Вас (всех женщин) касаются # تُمْسَسْنَ</item>
+    <item>We will touch # Мы будем касаться # سَنَمَسُّ</item>
+    <item>You (man) touched # Ты (мужчина) трогал # مَسِسْتَ</item>
+    <item>You (all men) were touched # Вас (всех мужчин) касались # مُسِسْتُمْ</item>
+    <item>You (two women) touch # Вы (две женщины) трогаете # تَمَسَّانِ</item>
+    <item>I am touched # Меня касаются # أُمَسُّ</item>
+    <item>You (two men) touched # Вы (двое мужчин) трогали # مَسِسْتُمَا</item>
+    <item>You (woman) were touched # Тебя (женщину) касались # مُسِسْتِ</item>
+    <item>You (all women) touch # Вы (все женщины) трогаете # تَمْسَسْنَ</item>
+    <item>We are touched # Нас касаются # نُمَسُّ</item>
+    <item>You (all men) touched # Вы (все мужчины) трогали # مَسِسْتُمْ</item>
+    <item>You (two women) were touched # Вас (двух женщин) касались # مُسِسْتُمَا</item>
+    <item>I touch # Я трогаю # أَمَسُّ</item>
+    <item>You (woman) touched # Ты (женщина) трогала # مَسِسْتِ</item>
+    <item>You (all women) were touched # Вас (всех женщин) касались # مُسِسْتُنَّ</item>
+    <item>We touch # Мы трогаем # نَمَسُّ</item>
+    <item>You (two women) touched # Вы (две женщины) касались # مَسِسْتُمَا</item>
+    <item>I was touched # Меня касались # مُسِسْتُ</item>
+    <item>Their (two men) were touched # Их (двоих мужчин) касались # مُسَّا</item>
+    <item>She touches # Она трогает # تَمَسُّ</item>
+    <item>Their (all women) are touched # Их (всех женщин) касаются # يُمْسَسْنَ</item>
+    <item>You (all women) touched # Вы (все женщины) трогали # مَسِسْتُنَّ</item>
+    <item>We were touched # Нас касались # مُسِسْنَا</item>
+    <item>He was touched # Его касались # مُسَّ</item>
+    <item>They (all men) touch # Они (все мужчины) трогают # يَمَسُّونَ</item>
+    <item>Their (two women) are touched # Их (двух женщин) касаются # تُمَسَّانِ</item>
+    <item>I touched # Я трогал # مَسِسْتُ</item>
+    <item>Touch (woman)! (Imperative) # Касайся (женщине)! # مَسِّي</item>
+    <item>He touches # Он касается # يَمَسُّ</item>
+    <item>Their (all men) are touched # Их (всех мужчин) касаются # يُمَسُّونَ</item>
+    <item>We touched # Мы касались # مَسِسْنَا</item>
+    <item>Touch (all men)! (Imperative) # Касайтесь (всем мужчинам)! # مَسُّوا</item>
+    <item>They (two men) touch # Они (двое мужчин) касаются # يَمَسَّانِ</item>
+    <item>She is touched # Её касаются # تُمَسُّ</item>
+    <item>Touch (two men)! (Imperative) # Касайтесь (двум мужчинам)! # مَسَّا</item>
+    <item>Their (two men) are touched # Их (двоих мужчин) касаются # يُمَسَّانِ</item>
+    <item>Touch (man)! (Imperative) # Касайся (мужчине)! # اِمْسَسْ</item>
+    <item>He is touched # Его касаются # يُمَسُّ</item>
+  </string-array>
+</resources>

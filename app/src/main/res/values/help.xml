@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_help">
+        помогать, оказывать помощь (а) - رَدَأَ\n
+        help (а) - رَدَأَ
+  </string>
+  <string-array name="help">
+    <item>He helped # Он помогал # رَدَأَ</item>
+    <item>He helps # Он помогает # يَرْدَأُ</item>
+    <item>Them (two men) were helped # Им (двоим мужчинам) помогали # رُدِئَا</item>
+    <item>They (all men) helped # Они (все мужчины) помогали # رَدَؤُوا</item>
+    <item>He is helped # Ему помогают # يُرْدَأُ</item>
+    <item>They (two men) help # Они (двое мужчин) помогают # يَرْدَآنِ</item>
+    <item>Them (all men) were helped # Им (всем мужчинам) помогали # رُدِؤُوا</item>
+    <item>She helped # Она помогала # رَدَأَتْ</item>
+    <item>Them (two men) are helped # Им (двоим мужчинам) помогают # يُرْدَآنِ</item>
+    <item>They (all men) help # Они (все мужчины) помогают # يَرْدَؤُونَ</item>
+    <item>She was helped # Ей помогали # رُدِئَتْ</item>
+    <item>They (two women) helped # Они (две женщины) помогали # رَدَأَتَا</item>
+    <item>Them (all men) are helped # Им (всем мужчинам) помогают # يُرْدَؤُونَ</item>
+    <item>She helps # Она помогает # تَرْدَأُ</item>
+    <item>Them (two women) were helped # Им (двум женщинам) помогали # رُدِئَتَا</item>
+    <item>They (all women) helped # Они (все женщины) помогали # رَدَأْنَ</item>
+    <item>She is helped # Ей помогают # تُرْدَأُ</item>
+    <item>They (two women) help # Они (две женщины) помогают # تَرْدَآنِ </item>
+    <item>Them (all women) were helped # Им (всем женщинам) помогали # رُدِئْنَ</item>
+    <item>You (man) helped # Ты (мужчина) помогал # رَدَأْتَ</item>
+    <item>Them (two women) are helped # Им (двум женщинам) помогают # تُرْدَآنِ</item>
+    <item>They (all women) help # Они (все женщины) помогают # يَرْدَأْنَ</item>
+    <item>You (man) were helped # Тебе (мужчине) помогали # رُدِئْتَ</item>
+    <item>You (two men) helped # Вы (двое мужчин) помогали # رَدَأْتُمَا</item>
+    <item>Let her help! (Imperative) # Пусть она помогает! # لِتَرْدَأْ</item>
+    <item>They (two women) will help # Они (две женщины) будут помогать # سَتَرْدَآنِ</item>
+    <item>Them (all women) are helped # Им (всем женщинам) помогают # يُرْدَأْنَ</item>
+    <item>You (man) help # Ты (мужчина) помогаешь # تَرْدَأُ</item>
+    <item>You (two men) were helped # Вам (двоим мужчинам) помогали # رُدِئْتُمَا</item>
+    <item>You (all men) helped # Вы (все мужчины) помогали # رَدَأْتُمْ</item>
+    <item>Let them (two women) help! (Imperative) # Пусть они (две женщины) помогают! # لِتَرْدَآ</item>
+    <item>They (all women) will help # Они (все женщины) будут помогать # سَيَرْدَأْنَ</item>
+    <item>You (man) are helped # Тебе (мужчине) помогают # تُرْدَأُ</item>
+    <item>You (two men) help # Вы (двое мужчин) помогаете # تَرْدَآنِ</item>
+    <item>You (all men) were helped # Вам (всем мужчинам) помогали # رُدِئْتُمْ</item>
+    <item>You (woman) helped # Ты (женщина) помогала # رَدَأْتِ</item>
+    <item>Let them (all women) help! (Imperative) # Пусть они (все женщины) помогают! # لِيَرْدَأْنَ</item>
+    <item>You (man) will help # Ты (мужчина) будешь помогать # سَتَرْدَأُ</item>
+    <item>You (two men) are helped # Вам (двоим мужчинам) помогают # تُرْدَآنِ</item>
+    <item>You (all men) help # Вы (все мужчины) помогаете # تَرْدَؤُونَ</item>
+    <item>You (woman) were helped # Тебе (женщине) помогали # رُدِئْتِ</item>
+    <item>You (two women) helped # Вы (две женщины) помогали # رَدَأْتُمَا</item>
+    <item>Help (man)! (Imperative) # Помогай (мужчине)! # اِرْدَأْ</item>
+    <item>You (all men) are helped # Вам (всем мужчинам) помогают # تُرْدَؤُونَ</item>
+    <item>You (woman) help # Ты (женщина) помогаешь # تَرْدَئِينَ</item>
+    <item>You (two women) were helped # Вам (двум женщинам) помогали # رُدِئْتُمَا</item>
+    <item>You (all women) helped # Вы (все женщины) помогали # رَدَأْتُنَّ</item>
+    <item>Help (two men)! (Imperative) # Помогайте (двум мужчинам)! # اِرْدَآ</item>
+    <item>You (woman) are helped # Тебе (женщине) помогают # تُرْدَئِينَ</item>
+    <item>You (two women) help # Вы (две женщины) помогаете # تَرْدَآنِ</item>
+    <item>You (all women) were helped # Вам (всем женщинам) помогали # رُدِئْتُنَّ</item>
+    <item>I helped # Я помогал # رَدَأْتُ</item>
+    <item>Help (all men)! (Imperative) # Помогайте (всем мужчинам)! # اِرْدَؤُوا</item>
+    <item>He was helped # Ему помогали # رُدِئَ</item>
+    <item>You (two women) are helped # Вам (двум женщинам) помогают # تُرْدَآنِ</item>
+    <item>You (all women) help # Вы (все женщины) помогаете # تَرْدَأْنَ</item>
+    <item>I was helped # Мне помогали # رُدِئْتُ</item>
+    <item>We helped # Мы помогали # رَدَأْنَا</item>
+    <item>Help (woman)! (Imperative) # Помогай (женщине)! # اِرْدَئِي</item>
+    <item>You (all women) are helped # Вам (всем женщинам) помогают # تُرْدَأْنَ</item>
+    <item>I help # Я помогаю # أَرْدَأُ</item>
+    <item>We were helped # Нам помогали # رُدِئْنَا</item>
+    <item>Help (two women)! (Imperative) # Помогайте (двум женщинам)! # اِرْدَآ</item>
+    <item>I am helped # Мне помогают # أُرْدَأُ</item>
+    <item>We help # Мы помогаем # نَرْدَأُ</item>
+    <item>Help (all women)! (Imperative) # Помогайте (всем женщинам)! # اِرْدَأْنَ</item>
+    <item>I will help # Я буду помогать # سَأَرْدَأُ</item>
+    <item>We are helped # Нам помогают # نُرْدَأُ</item>
+    <item>They (two men) helped # Они (двое мужчин) помогали # رَدَآ</item>
+    <item>Let him help! (Imperative) # Пусть он помогает! # لِيَرْدَأْ</item>
+  </string-array>
+</resources>

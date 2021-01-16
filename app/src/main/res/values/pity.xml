@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_pity">
+        жалеть (у) - رَؤُفَ\n 
+        pity (u) - رَؤُفَ
+    </string>
+  <string-array name="pity">
+    <item>He pitied # Он жалел # رَؤُفَ</item>
+    <item>Their (all men) were pitied # Их (всех мужчин) жалели # رُئِفُوا</item>
+    <item>They (two women) pity # Они (две женщины) жалеют # تَرْؤُفَانِ</item>
+    <item>You (man) are pitied # Тебя (мужчину) жалеют # تُرْأَفُ</item>
+    <item>You (all men) will pity # Вы (все мужчины) будете жалеть # سَتَرْؤُفُونَ</item>
+    <item>Pity (two women)! (Imperative) # Жалейте (двум женщинам)! # اُرْؤُفَا</item>
+    <item>They (two men) pitied # Они (двое мужчин) жалели # رَؤُفَا</item>
+    <item>She was pitied # Её жалели # رُئِفَتْ</item>
+    <item>They (all women) pity # Они (все женщины) жалеют # يَرْؤُفْنَ</item>
+    <item>You (two men) are pitied # Вас (двоих мужчин) жалеют # تُرْأَفَانِ</item>
+    <item>You (woman) will pity # Ты (женщина) будешь жалеть # سَتَرْؤُفِينَ</item>
+    <item>Pity (all women)! (Imperative) # Жалейте (всем женщинам)! # اُرْؤُفْنَ</item>
+    <item>They (all men) pitied # Они (все мужчины) жалели # رَؤُفُوا</item>
+    <item>Their (two women) were pitied # Их (двух женщин) жалели # رُئِفَتَا</item>
+    <item>You (man) pity # Ты (мужчина) жалеешь # تَرْؤُفُ</item>
+    <item>You (all men) are pitied # Вас (всех мужчин) жалеют # تُرْأَفُونَ</item>
+    <item>You (two women) will pity # Вы (две женщины) будете жалеть # سَتَرْؤُفَانِ</item>
+    <item>Let me pity! (Imperative) # Давайте я пожалею! # لِأَرْؤُفْ</item>
+    <item>She pitied # Она жалела # رَؤُفَتْ</item>
+    <item>Their (all women) were pitied # Их (всех женщин) жалели # رُئِفْنَ</item>
+    <item>You (two men) pity # Вы (двое мужчин) жалеете # تَرْؤُفَانِ</item>
+    <item>You (woman) are pitied # Тебя (женщину) жалеют # تُرْأَفِينَ</item>
+    <item>You (all women) will pity # Вы (все женщины) будете жалеть # سَتَرْؤُفْنَ</item>
+    <item>Let is pity together! (Imperative) # Давайте жалеть вместе! # لِنَرْؤُفْ</item>
+    <item>They (two women) pitied # Они (две женщины) жалели # رَؤُفَتَا</item>
+    <item>You (man) were pitied # Тебя (мужчину) жалели # رُئِفْتَ</item>
+    <item>You (all men) pity # Вы (все мужчины) жалеете # تَرْؤُفُونَ</item>
+    <item>You (two women) are pitied # Вас (двух женщин) жалеют # تُرْأَفَانِ</item>
+    <item>I will pity # Я буду жалеть # سَأَرْؤُفُ</item>
+    <item>They (all women) pitied # Они (все женщины) жалели # رَؤُفْنَ</item>
+    <item>You (two men) were pitied # Вас (двоих мужчин) жалели # رُئِفْتُمَا </item>
+    <item>You (woman) pity # Ты (женщина) жалеешь # تَرْؤُفِينَ</item>
+    <item>You (all women) are pitied # Вас (всех женщин) жалеют # تُرْأَفْنَ</item>
+    <item>We will pity # Мы будем жалеть # سَنَرْؤُفُ</item>
+    <item>You (man) pitied # Ты (мужчина) жалел # رَؤُفْتَ</item>
+    <item>You (all men) were pitied # Вас (всех мужчин) жалели # رُئِفْتُمْ</item>
+    <item>You (two women) pity # Вы (две женщины) жалеете # تَرْؤُفَانِ</item>
+    <item>I am pitied # Меня жалеют # أُرْأَفُ</item>
+    <item>You (two men) pitied # Вы (двое мужчин) жалели # رَؤُفْتُمَا</item>
+    <item>You (woman) were pitied # Тебя (женщину) жалели # رُئِفْتِ</item>
+    <item>You (all women) pity # Вы (все женщины) жалеете # تَرْؤُفْنَ</item>
+    <item>We are pitied # Нас жалеют # نُرْأَفُ</item>
+    <item>You (all men) pitied # Вы (все мужчины) жалели # رَؤُفْتُمْ</item>
+    <item>You (two women) were pitied # Вас (двух женщин) жалели # رُئِفْتُمَا</item>
+    <item>I pity # Я жалею # أَرْؤُفُ</item>
+    <item>You (woman) pitied # Ты (женщина) жалела # رَؤُفْتِ</item>
+    <item>You (all women) were pitied # Вас (всех женщин) жалели # رُئِفْتُنَّ</item>
+    <item>We pity # Мы жалеем # نَرْؤُفُ</item>
+    <item>You (two women) pitied # Вы (две женщины) жалели # رَؤُفْتُمَا </item>
+    <item>I was pitied # Меня жалели # رُئِفْتُ</item>
+    <item>Their (two men) were pitied # Их (двоих мужчин) жалели # رُئِفَا</item>
+    <item>She pities # Она жалеет # تَرْؤُفُ</item>
+    <item>Their (all women) are pitied # Их (всех женщин) жалеют # يُرْأَفْنَ</item>
+    <item>You (all women) pitied # Вы (все женщины) жалели # رَؤُفْتُنَّ</item>
+    <item>We were pitied # Нас жалели # رُئِفْنَا</item>
+    <item>He was pitied # Его жалели # رُئِفَ</item>
+    <item>They (all men) pity # Они (все мужчины) жалеют # يَرْؤُفُونَ</item>
+    <item>Their (two women) are pitied # Их (двух женщин) жалеют # تُرْأَفَانِ</item>
+    <item>I pitied # Я жалел # رَؤُفْتُ</item>
+    <item>Pity (woman)! (Imperative) # Жалей (женщине)! # اُرْؤُفِي</item>
+    <item>He pities # Он жалеет # يَرْؤُفُ</item>
+    <item>Their (all men) are pitied # Их (всех мужчин) жалеют # يُرْأَفُونَ</item>
+    <item>We pitied # Мы жалели # رَؤُفْنَا</item>
+    <item>Pity (all men)! (Imperative) # Жалейте (всем мужчинам)! # اُرْؤُفُوا</item>
+    <item>They (two men) pity # Они (двое мужчин) жалеют # يَرْؤُفَانِ</item>
+    <item>She is pitied # Её жалеют # تُرْأَفُ</item>
+    <item>Pity (two men)! (Imperative) # Жалейте (двум мужчинам)! # اُرْؤُفَا</item>
+    <item>Their (two men) are pitied # Их (двоих мужчин) жалеют # يُرْأَفَانِ</item>
+    <item>Pity (man)! (Imperative) # Жалей (мужчине)! # اُرْؤُفْ</item>
+    <item>He is pitied # Его жалеют # يُرْأَفُ</item>
+  </string-array>
+</resources>

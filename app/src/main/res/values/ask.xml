@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_ask">
+        спрашивать  (а) - سَأَلَ\n
+        ask (а) - سَأَلَ
+  </string>
+  <string-array name="past_ask">
+    <item>He asked # Он спрашивал # سَأَلَ</item>
+    <item>We asked # Мы спрашивали # سَأَلْنَا</item>
+    <item>I asked # Я спрашивал # سَأَلْتُ</item>
+    <item>They (two men) asked # Они (двое мужчин) спрашивали # سَأَلَا</item>
+    <item>They (all men) asked # Они (все мужчины) спрашивали # سَأَلُوا</item>
+    <item>You (man) asked # Ты (мужчина) спрашивал # سَأَلْتَ</item>
+    <item>She asked # Она спрашивала # سَأَلَتْ</item>
+    <item>You (two women) asked # Вы (две женщины) спрашивали # سَأَلْتُمَا</item>
+    <item>You (two men) asked # Вы (двое мужчин) спрашивали # سَأَلْتُمَا</item>
+    <item>They (two women) asked # Они (две женщины) спрашивали # سَأَلَتَا</item>
+    <item>They (all women) asked # Они (все женщины) спрашивали # سَأَلْنَ</item>
+    <item>You (all men) asked # Вы (все мужчины) спрашивали # سَأَلْتُمْ</item>
+    <item>You (woman) asked # Ты (женщина) спрашивала # سَأَلْتِ</item>
+    <item>You (all women) asked # Вы (все женщины) спрашивали # سَأَلْتُنَّ</item>
+    <item>He was asked # Его спрашивали # سُئِلَ</item>
+    <item>You (two men) were asked # Вас (двоих мужчин) спрашивали # سُئِلْتُمَا</item>
+    <item>I was asked # Меня спрашивали # سُئِلْتُ</item>
+    <item>Their (two women) were asked # Их (двух женщин) спрашивали # سُئِلَتَا</item>
+    <item>You (all women) were asked # Вас (всех женщин) спрашивали # سُئِلْتُنَّ</item>
+    <item>You (man) were asked # Тебя (мужчину) спрашивали # سُئِلْتَ</item>
+    <item>We were asked # Нас спрашивали # سُئِلْنَا</item>
+    <item>Their (two men) were asked # Их (двух мужчин) спрашивали # سُئِلَا</item>
+    <item>She was asked # Ее спрашивали # سُئِلَتْ</item>
+    <item>You (all men) were asked # Вас (всех мужчин) спрашивали # سُئِلْتُمْ</item>
+    <item>You (two women) were asked # Вас (двух женщин) спрашивали # سُئِلْتُمَا</item>
+    <item>Their (all men) were asked # Их (всех мужчин) спрашивали # سُئِلُوا</item>
+    <item>Their (all women) were asked # Их (всех женщин) спрашивали # سُئِلْنَ</item>
+    <item>You (woman) were asked # Тебя (женщину) спрашивали # سُئِلْتِ</item>
+  </string-array>
+  <string-array name="present_ask">
+    <item>He asks # Он спрашивает # يَسْأَلُ</item>
+    <item>We ask # Мы спрашиваем # نَسْأَلُ</item>
+    <item>I ask # Я спрашиваю # أَسْأَلُ</item>
+    <item>They (two men) ask # Они (двое мужчин) спрашивают # يَسْأَلَانِ</item>
+    <item>They (all men) ask # Они (все мужчины) спрашивают # يَسْأَلُونَ</item>
+    <item>You (man) ask # Ты (мужчина) спрашиваешь # تَسْأَلُ</item>
+    <item>She asks # Она спрашивает # تَسْأَلُ</item>
+    <item>You (two women) ask # Вы (две женщины) спрашиваете # تَسْأَلَانِ</item>
+    <item>You (two men) ask # Вы (двое мужчин) спрашиваете # تَسْأَلَانِ</item>
+    <item>They (two women) ask # Они (две женщины) спрашивают # تَسْأَلَانِ</item>
+    <item>They (all women) ask # Они (все женщины) спрашивают # يَسْأَلْنَ</item>
+    <item>You (all men) ask # Вы (все мужчины) спрашиваете # تَسْأَلُونَ</item>
+    <item>You (woman) ask # Ты (женщина) спрашиваешь # تَسْأَلِينَ</item>
+    <item>You (all women) ask # Вы (все женщины) спрашиваете # تَسْأَلْنَ</item>
+    <item>He is asked # Его спрашивают # يُسْأَلُ</item>
+    <item>You (two men) are asked # Вас (двоих мужчин) спрашивают # تُسْأَلَانِ</item>
+    <item>I am asked # Меня спрашивают # أُسْأَلُ</item>
+    <item>Their (two women) are asked # Их (двоих женщин) спрашивают # تُسْأَلَانِ</item>
+    <item>You (all women) are asked # Вас (всех женщин) спрашивают # تُسْأَلْنَ</item>
+    <item>You (man) are asked # Тебя (мужчину) спрашивают # تُسْأَلُ</item>
+    <item>We are asked # Нас спрашивают # نُسْأَلُ</item>
+    <item>Their (two men) are asked # Их (двух мужчин) спрашивают # يُسْأَلَانِ</item>
+    <item>She is asked # Ее спрашивают # تُسْأَلُ</item>
+    <item>You (all men) are asked # Вас (всех мужчин) спрашивают # تُسْأَلُونَ</item>
+    <item>You (two women) are asked # Вас (двух женщин) спрашивают # تُسْأَلَانِ</item>
+    <item>Their (all men) are asked # Их (всех мужчин) спрашивают # يُسْأَلُونَ</item>
+    <item>Their (all women) are asked # Их (всех женщин) спрашивают # يُسْأَلْنَ</item>
+    <item>You (woman) are asked # Тебя (женщину) спрашивают # تُسْأَلِينَ</item>
+  </string-array>
+  <string-array name="future_ask">
+    <item>Ask (man)! (Imperative) # Спрашивай (мужчине)! # اِسْأَلْ</item>
+    <item>Ask (two men)! (Imperative) # Спрашивайте (двум мужчинам)! # اِسْأَلَا</item>
+    <item>Ask (all men)! (Imperative) # Спрашивайте (всем мужчинам)! # اِسْأَلُوا</item>
+    <item>Ask (woman)! (Imperative) # Спрашивай (женщине)! # اِسْأَلِي</item>
+    <item>Ask (two women)! (Imperative) # Спрашивайте (двум женщинам)! # اِسْأَلَا</item>
+    <item>Ask (all women)! (Imperative) # Спрашивайте (всем женщинам)! # اِسْأَلْنَ</item>
+    <item>Let is ask together! (Imperative) # Давайте спрашивать вместе! # لِنَسْأَلْ</item>
+    <item>He will ask # Он будет спрашивать # سَيَسْأَلُ</item>
+    <item>They (all women) will ask # Они (все женщины) будут спрашивать # سَيَسْأَلْنَ</item>
+    <item>You (man) will ask # Ты будешь спрашивать (мужчине) # سَتَسْأَلُ</item>
+    <item>Let me ask! (Imperative) # Давайте я спрашу! # لِأَسْأَلْ</item>
+    <item>Let them (two men) ask! (Imperative) # Пусть они (двое мужчин) спросят! # لِيَسْأَلَا</item>
+    <item>Let them (all men) ask! (Imperative) # Пусть они (все мужчины) спросят! # لِيَسْأَلُوا</item>
+    <item>Let them (two women) ask! (Imperative) # Пусть они (две женщины) спросят! # لِتَسْأَلَا</item>
+  </string-array>
+</resources>

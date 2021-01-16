@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="description_obey">
+        подчиняться (а) - خَذِئَ\n 
+        obey (а) - خَذِئَ
+    </string>
+  <string-array name="obey">
+    <item>He obeyed # Он подчинялся # خَذِئَ</item>
+    <item>Them (all men) were obeyed # Им (всем мужчинам) подчинялись # خُذِئُوا</item>
+    <item>They (two women) obey # Они (две женщины) подчиняются # تَخْذَآنِ</item>
+    <item>You (man) are obeyed # Тебе (мужчине) подчиняются # تُخْذَأُ</item>
+    <item>You (all men) will obey # Вы (все мужчины) будете подчиняться # سَتَخْذَؤُونَ</item>
+    <item>Obey (two women)! (Imperative) # Подчиняйтесь (двум женщинам)! # اِخْذَآ</item>
+    <item>They (two men) obeyed # Они (двое мужчин) подчинялись # خَذِئَا</item>
+    <item>She was obeyed # Ей подчинялись # خُذِئَتْ</item>
+    <item>They (all women) obey # Они (все женщины) подчиняются # يَخْذَأْنَ</item>
+    <item>You (two men) are obeyed # Вам (двоим мужчинам) подчиняются # تُخْذَآنِ</item>
+    <item>You (woman) will obey # Ты (женщина) будешь подчиняться # سَتَخْذَئِينَ</item>
+    <item>Obey (all women)! (Imperative) # Подчиняйтесь (всем женщинам)! # اِخْذَأْنَ</item>
+    <item>They (all men) obeyed # Они (все мужчины) подчинялись # خَذِئُوا</item>
+    <item>Them (two women) were obeyed # Им (двум женщинам) подчинялись # خُذِئَتَا</item>
+    <item>You (man) obey # Ты (мужчина) подчиняешься # تَخْذَأُ</item>
+    <item>You (all men) are obeyed # Вам (всем мужчинам) подчиняются # تُخْذَؤُونَ</item>
+    <item>You (two women) will obey # Вы (две женщины) будете подчиняться # سَتَخْذَآنِ</item>
+    <item>Let me obey! (Imperative) # Давайте я подчинюсь! # لِأَخْذَأْ</item>
+    <item>She obeyed # Она подчинялась # خَذِئَتْ</item>
+    <item>Them (all women) were obeyed # Им (всем женщинам) подчинялись # خُذِئْنَ</item>
+    <item>You (two men) obey # Вы (двое мужчин) подчиняетесь # تَخْذَآنِ</item>
+    <item>You (woman) are obeyed # Тебе (женщине) подчиняются # تُخْذَئِينَ</item>
+    <item>You (all women) will obey # Вы (все женщины) будете подчиняться # سَتَخْذَأْنَ</item>
+    <item>Let is obey together! (Imperative) # Давайте подчиняться вместе! # لِنَخْذَأْ</item>
+    <item>They (two women) obeyed # Они (две женщины) подчинялись # خَذِئَتَا</item>
+    <item>You (man) were obeyed # Тебе (мужчине) подчинялись # خُذِئْتَ</item>
+    <item>You (all men) obey # Вы (все мужчины) подчиняетесь # تَخْذَؤُونَ</item>
+    <item>You (two women) are obeyed # Вам (двум женщинам) подчиняются # تُخْذَآنِ</item>
+    <item>I will obey # Я буду подчиняться # سَأَخْذَأُ</item>
+    <item>They (all women) obeyed # Они (все женщины) подчинялись # خَذِئْنَ</item>
+    <item>You (two men) were obeyed # Вам (двоим мужчинам) подчинялись # خُذِئْتُمَا</item>
+    <item>You (woman) obey # Ты (женщина) подчиняешься # تَخْذَئِينَ</item>
+    <item>You (all women) are obeyed # Вам (всем женщинам) подчиняются # تُخْذَأْنَ</item>
+    <item>We will obey # Мы будем подчиняться # سَنَخْذَأُ</item>
+    <item>You (man) obeyed # Ты (мужчина) подчинялся # خَذِئْتَ</item>
+    <item>You (all men) were obeyed # Вам (всем мужчинам) подчинялись # خُذِئْتُمْ</item>
+    <item>You (two women) obey # Вы (две женщины) подчиняетесь # تَخْذَآنِ</item>
+    <item>I am obeyed # Мне подчиняются # أُخْذَأُ</item>
+    <item>You (two men) obeyed # Вы (двое мужчин) подчинялись # خَذِئْتُمَا</item>
+    <item>You (woman) were obeyed # Тебе (женщине) подчинялись # خُذِئْتِ</item>
+    <item>You (all women) obey # Вы (все женщины) подчиняетесь # تَخْذَأْنَ</item>
+    <item>We are obeyed # Нам подчиняются # نُخْذَأُ</item>
+    <item>You (all men) obeyed # Вы (все мужчины) подчинялись # خَذِئْتُمْ</item>
+    <item>You (two women) were obeyed # Вам (двум женщинам) подчинялись # خُذِئْتُمَا</item>
+    <item>I obey # Я подчиняюсь # أَخْذَأُ</item>
+    <item>You (woman) obeyed # Ты (женщина) подчинялась # خَذِئْتِ</item>
+    <item>You (all women) were obeyed # Вам (всем женщинам) подчинялись # خُذِئْتُنَّ</item>
+    <item>We obey # Мы подчиняемся # نَخْذَأُ</item>
+    <item>You (two women) obeyed # Вы (две женщины) подчинялись # خَذِئْتُمَا</item>
+    <item>I was obeyed # Мне подчинялись # خُذِئْتُ</item>
+    <item>Them (two men) were obeyed # Им (двоим мужчинам) подчинялись # خُذِئَا</item>
+    <item>She obeys # Она подчиняется # تَخْذَأُ</item>
+    <item>Them (all women) are obeyed # Им (всем женщинам) подчиняются # يُخْذَأْنَ</item>
+    <item>You (all women) obeyed # Вы (все женщины) подчинялись # خَذِئْتُنَّ</item>
+    <item>We were obeyed # Нам подчинялись # خُذِئْنَا</item>
+    <item>He was obeyed # Ему подчинялись # خُذِئَ</item>
+    <item>They (all men) obey # Они (все мужчины) подчиняются # يَخْذَؤُونَ</item>
+    <item>Them (two women) are obeyed # Им (двум женщинам) подчиняются # تُخْذَآنِ</item>
+    <item>I obeyed # Я подчинялся # خَذِئْتُ</item>
+    <item>Obey (woman)! (Imperative) # Подчиняйся (женщине)! # اِخْذَئِي</item>
+    <item>He obeys # Он подчиняется # يَخْذَأُ</item>
+    <item>Them (all men) are obeyed # Им (всем мужчинам) подчиняются # يُخْذَؤُونَ</item>
+    <item>We obeyed # Мы подчинялись # خَذِئْنَا</item>
+    <item>Obey (all men)! (Imperative) # Подчиняйтесь (всем мужчинам)! # اِخْذَؤُوا</item>
+    <item>They (two men) obey # Они (двое мужчин) подчиняются # يَخْذَآنِ</item>
+    <item>She is obeyed # Ей подчиняются # تُخْذَأُ</item>
+    <item>Obey (two men)! (Imperative) # Подчиняйтесь (двум мужчинам)! # اِخْذَآ</item>
+    <item>Them (two men) are obeyed # Им (двоим мужчинам) подчиняются # يُخْذَآنِ</item>
+    <item>Obey (man)! (Imperative) # Подчиняйся (мужчине)! # اِخْذَأْ</item>
+    <item>He is obeyed # Ему подчиняются # يُخْذَأُ</item>
+  </string-array>
+</resources>
