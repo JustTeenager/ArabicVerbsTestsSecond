@@ -36,21 +36,6 @@ public class Tests {
 
         //TODO поменять порядок
         verbs = new ArrayList<>(TestsConfig.MAX_COUNT_VERBS);
-        /*verbs.add(new Return());
-        verbs.add(new Touch());
-        verbs.add(new Win());
-        verbs.add(new Love());
-        verbs.add(new Reward());
-        verbs.add(new Listen());
-        verbs.add(new Surround());
-        verbs.add(new Despise());
-        verbs.add(new Ask());
-        verbs.add(new Pity());
-        verbs.add(new Supply());
-        verbs.add(new Hide());
-        verbs.add(new Help());
-        verbs.add(new Obey());
-        verbs.add(new Soothe());*/
         verbs.add(new Discover());
         verbs.add(new Leave());
         verbs.add(new Trust());
@@ -66,38 +51,6 @@ public class Tests {
         verbs.add(new Clothe());
         verbs.add(new Invite());
         verbs.add(new SlackenAndPhilosophize());
-
-
-//         test for unlocking tests
-        /*progress = new Progress();
-
-        for (int i = 0; i < 5; i++) {
-            TimeVerb verb = (TimeVerb) verbs.get(i);
-            TimeVerb.Time time = TimeVerb.Time.PAST;
-            progress.putSucceed(verb, time, verb.getPastVerb().getPhrases().size());
-            progress.putFailed(verb, time, 0);
-
-            time = TimeVerb.Time.PRESENT;
-            progress.putSucceed(verb, time, verb.getPresentVerb().getPhrases().size());
-            progress.putFailed(verb, time, 0);
-
-            time = TimeVerb.Time.FUTURE;
-            progress.putSucceed(verb, time, verb.getFutureVerb().getPhrases().size());
-            progress.putFailed(verb, time, 0);
-        }
-*/
-        /*for (int i = 1; i < 5; i++) {
-            progress.addPassed((TimeVerb) verbs.get(i));
-        }
-        progress.putSucceed((TimeVerb) verbs.get(0), TimeVerb.Time.PAST, ((TimeVerb) verbs.get(0)).getPastVerb().getPhrases().size() - 1);*/
-        /*for (int i = 5; i < 10; i++) {
-            Verb verb = verbs.get(i);
-            TimeVerb.Time time = TimeVerb.Time.COMMON;
-            progress.putSucceed(verb, time, verb.getPhrases().size());
-            progress.putFailed(verb, time, 0);
-            progress.addPassed(verb);
-        }*/
-
         this.progress = progress;
     }
 

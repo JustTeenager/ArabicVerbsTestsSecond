@@ -2,12 +2,10 @@ package com.apakhun.arabicverbstestssecond.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 
 import com.apakhun.arabicverbstestssecond.App;
-import com.apakhun.arabicverbstestssecond.R;
 import com.apakhun.arabicverbstestssecond.Utils;
 import com.apakhun.arabicverbstestssecond.model.verbs.Clothe;
 import com.apakhun.arabicverbstestssecond.model.verbs.Decorate;
@@ -74,49 +72,34 @@ public abstract class Verb implements Parcelable {
         public Verb createFromParcel(Parcel source) {
             switch (flag) {
                 case 0:
-                    //return new Return(source);
                     return new Discover(source);
                 case 1:
-                    //return new Touch(source);
                     return new Leave(source);
                 case 2:
-                    //return new Win(source);
                     return new Trust(source);
                 case 3:
-                    //return new Love(source);
                     return new DryAndWake(source);
                 case 4:
-                    //return new Reward(source);
                     return new Give(source);
                 case 5:
-                    //return new Listen(source);
                     return new Decorate(source);
                 case 6:
-                    //return new Surround(source);
                     return new Visit(source);
                 case 7:
-                  //  return new Despise(source);
                     return new Select(source);
                 case 8:
-                    //return new Ask(source);
                     return new Dread(source);
                 case 9:
-                    //return new Pity(source);
                     return new Protect(source);
                 case 10:
-                    //return new Supply(source);
                     return new Heal(source);
                 case 11:
-                    //return new Hide(source);
                     return new Meet(source);
                 case 12:
-                    //return new Help(source);
                     return new Clothe(source);
                 case 13:
-                    //return new Obey(source);
                     return new Invite(source);
                 case 14:
-                    //return new Soothe(source);
                     return new SlackenAndPhilosophize(source);
 
                     default: return new Discover(source);
@@ -157,8 +140,6 @@ public abstract class Verb implements Parcelable {
 
     protected String getDescription(int descriptionId) {
         String descr = App.getRes().getString(descriptionId);
-
-//        String[] ru_en = descr.split("\\r?\\n");
         String[] ru_en = descr.split(System.getProperty("line.separator"));
         return Locale.getDefault().getLanguage().equals("ru") ? ru_en[0] : ru_en[1];
     }

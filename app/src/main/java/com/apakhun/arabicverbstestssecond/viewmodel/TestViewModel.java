@@ -1,7 +1,5 @@
 package com.apakhun.arabicverbstestssecond.viewmodel;
 
-import android.util.Pair;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -26,10 +24,6 @@ public class TestViewModel extends ViewModel {
         this.time = time;
         this.progress = progress;
         key = verb.getVerbText() + time.toString();
-    }
-
-    public Pair<Verb, TimeVerb.Time> getSelectedVerb() {
-        return new Pair<>(verb, time);
     }
 
     public void requestTest() {

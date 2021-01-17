@@ -206,7 +206,6 @@ public class SelectionsView extends ConstraintLayout {
 
             if (!question.isLast()) {
                 ivNextMarked.setImageDrawable(App.getRes().getDrawable(R.drawable.hand));
-//                ivNextMarked.setLayoutParams(new LayoutParams(100, 100));
                 if (question.isSucceed())
                     ivNextMarked.getDrawable().setColorFilter(App.getRes().getColor(R.color.colorWhite), PorterDuff.Mode.SRC_ATOP);
                 else

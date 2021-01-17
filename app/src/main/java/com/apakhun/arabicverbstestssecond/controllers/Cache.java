@@ -1,7 +1,6 @@
 package com.apakhun.arabicverbstestssecond.controllers;
 
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import com.apakhun.arabicverbstestssecond.App;
 import com.google.gson.Gson;
@@ -43,10 +42,6 @@ public class Cache<T> {
     public void saveDataAsync(String key, T data) {
         new Thread(() -> {
             String json = gson.toJson(data, type);
-
-            Log.d("tut_key",key);
-            Log.d("tut_data",data.toString());
-            Log.d("tut_json",json);
             SharedPreferences.Editor ed = sPref.edit();
             ed.putString(key, json);
             ed.apply();

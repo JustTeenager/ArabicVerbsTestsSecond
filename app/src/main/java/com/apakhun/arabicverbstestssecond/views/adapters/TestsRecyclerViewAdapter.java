@@ -2,10 +2,8 @@ package com.apakhun.arabicverbstestssecond.views.adapters;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -22,7 +20,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.apakhun.arabicverbstestssecond.App;
 import com.apakhun.arabicverbstestssecond.R;
 import com.apakhun.arabicverbstestssecond.activities.MainActivity;
-import com.apakhun.arabicverbstestssecond.controllers.Cache;
 import com.apakhun.arabicverbstestssecond.controllers.Sounder;
 import com.apakhun.arabicverbstestssecond.fragments.ParentFragment;
 import com.apakhun.arabicverbstestssecond.fragments.TestFragment;
@@ -40,10 +37,8 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     private Tests data;
     private Context context;
     public static final int EXPANDABLE_VIEW_TYPE = 0;
-    public static final int DOUBLEWORD_VIEW_TYPE = 2;
+    public static final int DOUBLE_WORD_VIEW_TYPE = 2;
     public static final int DEFAULT_VIEW_TYPE = 1;
-    private Cache cache;
-    private boolean isFirstVerbsPassed, isSecondVerbsPassed, isThirdVerbsPassed, isFourthVerbsPassed;
     private SparseBooleanArray expandState = new SparseBooleanArray(Tests.TestsConfig.MAX_COUNT_VERBS);
     private Verb verbTmp;
     private Verb verbSound;
@@ -62,18 +57,12 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         notifyDataSetChanged();
     }
 
-    private final View.OnTouchListener touchListener = new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View view, MotionEvent motionEvent) {
-            return false;
-        }
-    };
 
     @NonNull
     @Override
     public DefaultViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         this.context = viewGroup.getContext();
-        if (viewType==DOUBLEWORD_VIEW_TYPE) return new DoubleWordHolder(LayoutInflater.from(context).inflate(R.layout.item_test_expandable, viewGroup, false));
+        if (viewType== DOUBLE_WORD_VIEW_TYPE) return new DoubleWordHolder(LayoutInflater.from(context).inflate(R.layout.item_test_expandable, viewGroup, false));
         else if (viewType == EXPANDABLE_VIEW_TYPE) {
             return new ExpandableViewHolder(LayoutInflater.from(context).inflate(R.layout.item_test_expandable, viewGroup, false));
         }
@@ -87,61 +76,11 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         verbTmp = verb;
         Tests.Progress progress = data.getProgress();
         viewHolder.bind(verbTmp,progress,position);
-        if (viewHolder.getItemViewType() == EXPANDABLE_VIEW_TYPE) {
-        } else if (viewHolder.getItemViewType() == DEFAULT_VIEW_TYPE) {
-            /*DefaultViewHolder holder = viewHolder;
-
-            holder.pieChart.setSucceedCount(progress.getSucceed(verb, TimeVerb.Time.COMMON));
-            holder.pieChart.setFailedCount(progress.getFailed(verb, TimeVerb.Time.COMMON));
-            holder.pieChart.setTotalQuestions(verb.getPhrases().size());
-
-
-
-            holder.clTestItem.setOnClickListener((v) -> toTestFragment(verb, TimeVerb.Time.COMMON));*/
-        }
-
 
         blockSomeTests(position, viewHolder, progress);
     }
 
     private void blockSomeTests(int position, DefaultViewHolder viewHolder, Tests.Progress progress){
-        //TODO Главная функция, которая блокирует/разблокирует различные уровни + в классе Tests есть метод checkForUnlocks(). Он вызывается каждый раз, когда пользователь успешно проходит тест.
-
-        //Ниже комментарии, которые я использовал для тестирования
-//        Verb v1 = data.getVerbs().get(0);
-//        Verb v2 = data.getVerbs().get(1);
-//        Verb v3 = data.getVerbs().get(2);
-//        Verb v4 = data.getVerbs().get(3);
-//        progress.addPassed(v1);
-//        progress.addPassed(v2);
-//        progress.addPassed(v3);
-//        progress.addPassed(v4);
-////        // second wave
-//        Verb v5 = data.getVerbs().get(4);
-//        Verb v6 = data.getVerbs().get(5);
-//        Verb v7 = data.getVerbs().get(6);
-//        Verb v8 = data.getVerbs().get(7);
-//        progress.addPassed(v5);
-//        progress.addPassed(v6);
-//        progress.addPassed(v7);
-//        progress.addPassed(v8);
-////        // thirds wave
-//        Verb v9 = data.getVerbs().get(8);
-//        Verb v10 = data.getVerbs().get(9);
-//        Verb v11 = data.getVerbs().get(10);
-//        progress.addPassed(v9);
-//        progress.addPassed(v10);
-//        progress.addPassed(v11);
-//        // foruth wave
-//        Verb v12 = data.getVerbs().get(11);
-//        Verb v13 = data.getVerbs().get(12);
-//        Verb v14 = data.getVerbs().get(13);
-//        progress.addPassed(v12);
-//        progress.addPassed(v13);
-//        progress.addPassed(v14);
-//        Verb v15 = data.getVerbs().get(14);
-//        progress.addPassed(v15);
-
 
             if(position > 3) {
                 if (viewHolder.getItemViewType() == DEFAULT_VIEW_TYPE) {
@@ -151,13 +90,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                     viewHolder.btnLock.setEnabled(true);
                     viewHolder.btnSound.setVisibility(View.INVISIBLE);
                     viewHolder.btnSound.setEnabled(false);
-//                    viewHolder.btnSound.setImageDrawable(App.getRes().getDrawable(R.drawable.lock_selector));
-//                    viewHolder.btnSound.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            Toast.makeText(App.getAppContext(), App.getRes().getString(R.string.lock_pass_available_tests), Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
+//
                 } else if (viewHolder.getItemViewType() == EXPANDABLE_VIEW_TYPE) {
                     ExpandableViewHolder holder = (ExpandableViewHolder) viewHolder;
                     holder.expandableLayout.setEnabled(false);
@@ -167,15 +100,9 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                     viewHolder.btnLock.setEnabled(true);
                     viewHolder.btnSound.setVisibility(View.INVISIBLE);
                     viewHolder.btnSound.setEnabled(false);
-//                    holder.btnSound.setImageDrawable(App.getRes().getDrawable(R.drawable.lock_selector));
-//                    viewHolder.btnSound.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            Toast.makeText(App.getAppContext(), App.getRes().getString(R.string.lock_pass_available_tests), Toast.LENGTH_SHORT).show();
-//                        }
-//                    });
+//
                 }
-                else if (viewHolder.getItemViewType() == DOUBLEWORD_VIEW_TYPE){
+                else if (viewHolder.getItemViewType() == DOUBLE_WORD_VIEW_TYPE){
                     DoubleWordHolder holder = (DoubleWordHolder) viewHolder;
                     holder.expandableLayout.setEnabled(false);
                     holder.vItemRow.setEnabled(false);
@@ -222,7 +149,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             holder.btnSound.setVisibility(View.VISIBLE);
             holder.btnSound.setEnabled(true);
         }
-        else if (viewHolder.getItemViewType() == DOUBLEWORD_VIEW_TYPE){
+        else if (viewHolder.getItemViewType() == DOUBLE_WORD_VIEW_TYPE){
             DoubleWordHolder holder = (DoubleWordHolder) viewHolder;
             holder.expandableLayout.setEnabled(true);
             holder.vItemRow.setEnabled(true);
@@ -238,7 +165,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     @Override
     public int getItemViewType(int position) {
         //if (position + 1 <= Tests.TestsConfig.FIRST_VERBS_WITH_SEPARATE_TIME 3,14)
-        if (position == 3 || position ==14) return DOUBLEWORD_VIEW_TYPE;
+        if (position == 3 || position ==14) return DOUBLE_WORD_VIEW_TYPE;
         else if (position == 0  || position == 4 || position == 9 || position == 12) return EXPANDABLE_VIEW_TYPE;
         else return DEFAULT_VIEW_TYPE;
     }

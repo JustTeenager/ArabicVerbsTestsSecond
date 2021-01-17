@@ -100,21 +100,6 @@ public class TestsFragment extends ParentFragment {
 
 
     private void showCongratulations(int imageId) {
-        /*AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        Typeface type = Typeface.createFromAsset(getActivity().getAssets(),"fonts/arabical.ttf");
-
-        View postcard = getLayoutInflater().inflate(R.layout.postcard, null);
-
-        TextView tvCongr = postcard.findViewById(R.id.tvCongratulation);
-        tvCongr.setTypeface(type);
-        tvCongr.setText(stringId);
-
-        builder.setView(postcard).setPositiveButton(R.string.great, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        }).show();*/
 
         Bundle bundle = new Bundle();
         bundle.putInt(CongratulationFragment.CONGRATULATION_IMAGE_ID_KEY, imageId);

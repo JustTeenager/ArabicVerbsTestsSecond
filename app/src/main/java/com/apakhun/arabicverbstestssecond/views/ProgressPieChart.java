@@ -79,7 +79,6 @@ public class ProgressPieChart extends PieChart {
         getDescription().setEnabled(false);
         getLegend().setEnabled(false);
 
-//        setExtraOffsets(5, 10, 5, 5);
         setDragDecelerationFrictionCoef(0.95f);
         setCenterText(String.valueOf(0));
         setCenterTextSize(10f);
@@ -110,28 +109,9 @@ public class ProgressPieChart extends PieChart {
         for (int c : VORDIPLOM_COLORS)
             colors.add(c);
 
-        /*for (int c : ColorTemplate.JOYFUL_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.COLORFUL_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.LIBERTY_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.PASTEL_COLORS)
-            colors.add(c);
-
-        colors.add(ColorTemplate.getHoloBlue()); */
-
         dataSet.setColors(colors);
-        //dataSet.setSelectionShift(0f);
 
         PieData data = new PieData(dataSet);
-//        data.setValueFormatter(new PercentFormatter(this));
-//        data.setValueTextSize(11f);
-//        data.setValueTextColor(Color.WHITE);
-//        data.setValueTypeface(tfLight);
         setData(data);
         animateY(300);
 

@@ -28,13 +28,9 @@ public class VerbImageFrameLayout extends FrameLayout {
     }
 
     public void setImage(int drawable) {
-        //ImageView back = findViewById(R.id.ivPicVerbBack);
         ImageView front = findViewById(R.id.ivPicVerbFront);
-        //back.setImageDrawable(App.getRes().getDrawable(drawable));
         Drawable clone = App.getRes().getDrawable(drawable).getConstantState().newDrawable();
         clone.mutate();
         front.setImageDrawable(clone);
-        //back.getDrawable().setColorFilter(App.getRes().getColor(R.color.colorDarkBlue), PorterDuff.Mode.SRC_ATOP);
-        //front.getDrawable().setColorFilter(App.getRes().getColor(R.color.colorWhite), PorterDuff.Mode.SRC_ATOP);
     }
 }
