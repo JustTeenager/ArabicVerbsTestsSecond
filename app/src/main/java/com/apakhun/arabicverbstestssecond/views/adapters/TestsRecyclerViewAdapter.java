@@ -292,7 +292,8 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             vItemRow.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    ((LinearLayoutManager)recyclerView.getLayoutManager()).setStackFromEnd(position == 14);
+                    recyclerView.scrollToPosition(position);
+                    ((LinearLayoutManager)recyclerView.getLayoutManager()).setStackFromEnd(position == 14 || position == 12);
                     expandableLayout.toggle();
                 }
             });
