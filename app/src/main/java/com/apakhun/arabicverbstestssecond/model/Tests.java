@@ -64,9 +64,9 @@ public class Tests {
         private Map<Integer, Integer> progressTrue = new HashMap<>();
         private Map<Integer, Integer> progressFalse = new HashMap<>();
         //TODO поменять обратно на false
-        private boolean unlockSecondWave = false;
-        private boolean unlockThirdWave = false;
-        private boolean unlockFourthWave = false;
+        private boolean unlockSecondWave = true;
+        private boolean unlockThirdWave = true;
+        private boolean unlockFourthWave = true;
 
 
         private Integer toKey(Verb verb, TimeVerb.Time time) {

@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.apakhun.arabicverbstestssecond.App;
@@ -43,6 +44,8 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     private Verb verbTmp;
     private Verb verbSound;
 
+    private RecyclerView recyclerView;
+
     private MainActivity activity;
 
     public TestsRecyclerViewAdapter(MainActivity activity) {
@@ -57,6 +60,11 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         notifyDataSetChanged();
     }
 
+    @Override
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        this.recyclerView=recyclerView;
+    }
 
     @NonNull
     @Override
@@ -284,6 +292,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             vItemRow.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    ((LinearLayoutManager)recyclerView.getLayoutManager()).setStackFromEnd(position == 14);
                     expandableLayout.toggle();
                 }
             });
