@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_select">
+  <string name="description_select" translatable="false">
         выбирать, предпочитать (и) - خَارَ\n
         select (i) - خَارَ
   </string>

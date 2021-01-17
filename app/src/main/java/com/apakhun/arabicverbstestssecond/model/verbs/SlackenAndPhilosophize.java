@@ -47,4 +47,14 @@ public class SlackenAndPhilosophize extends TimeVerb {
     public int getGroup(){
         return 4;
     }
+
+    @Override
+    public String getSubtitlesFirst(){
+        return getSubtitles(R.array.subtitles_slacken);
+    }
+
+    @Override
+    public String getSubtitlesSecond(){
+        return getSubtitles(R.array.subtitles_philosophize);
+    }
 }

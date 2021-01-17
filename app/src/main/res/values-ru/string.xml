@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="imperative">Повелительное</string>
     <string name="common_info">Общие сведения</string>
     <string name="assimilated">Подобные правильным</string>
     <string name="hollow">Пустые глаголы</string>

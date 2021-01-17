@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_discover">
+  <string name="description_discover" translatable="false">
         находить, искать (и) - وَجَدَ\n
         discover (i) - وَجَدَ
   </string>

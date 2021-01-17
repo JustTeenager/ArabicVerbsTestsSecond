@@ -16,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.apakhun.arabicverbstestssecond.R;
 
-import java.util.Collections;
-
 public class MainFragment extends ParentFragment {
     private final static String TAG = MainFragment.class.getSimpleName();
 

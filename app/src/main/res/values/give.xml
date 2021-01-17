@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_give">
+  <string name="description_give" translatable="false">
         давать, даровать  (у) - نَالَ\n
         give (u) - نَالَ
   </string>

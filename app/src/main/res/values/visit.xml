@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_visit">
+  <string name="description_visit" translatable="false">
         посещать, навещать (у) - زَارَ\n 
         visit (u) - زَارَ
     </string>

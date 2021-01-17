@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_protect">
+  <string name="description_protect" translatable="false">
         защищать, охранять (и) - حَمَى\n
         protect (i) - حَمَى
   </string>

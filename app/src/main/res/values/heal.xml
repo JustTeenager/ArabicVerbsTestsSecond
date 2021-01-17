@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_heal">
+  <string name="description_heal" translatable="false">
         вылечивать, лечить (и) - شَفَى\n 
         heal (i) - شَفَى
     </string>

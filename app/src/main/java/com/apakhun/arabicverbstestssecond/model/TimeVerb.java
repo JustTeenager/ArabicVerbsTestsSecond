@@ -8,6 +8,7 @@ import com.apakhun.arabicverbstestssecond.model.Phrase;
 import com.apakhun.arabicverbstestssecond.model.Verb;
 
 import java.util.List;
+import java.util.Locale;
 
 public abstract class TimeVerb extends Verb {
     public enum Time {
@@ -56,6 +57,11 @@ public abstract class TimeVerb extends Verb {
         dest.writeParcelable(pastVerb, flags);
         dest.writeParcelable(presentVerb, flags);
         dest.writeParcelable(futureVerb, flags);
+    }
+
+    protected String getSubtitles(int descriptionId){
+        String[] descr = App.getRes().getStringArray(descriptionId);
+        return Locale.getDefault().getLanguage().equals("ru") ? descr[0] : descr[1];
     }
 
     public List<Phrase> getPhrasesByTime(Time time) {

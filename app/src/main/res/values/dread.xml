@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_dread">
+  <string name="description_dread" translatable="false">
         бояться, страшиться(a) - خَافَ\n 
         dread (a) - خَافَ</string>
   <string-array name="dread">

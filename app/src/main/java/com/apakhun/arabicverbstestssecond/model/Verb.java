@@ -2,9 +2,12 @@ package com.apakhun.arabicverbstestssecond.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 import com.apakhun.arabicverbstestssecond.App;
+import com.apakhun.arabicverbstestssecond.R;
 import com.apakhun.arabicverbstestssecond.Utils;
 import com.apakhun.arabicverbstestssecond.model.verbs.Clothe;
 import com.apakhun.arabicverbstestssecond.model.verbs.Decorate;
@@ -165,4 +168,12 @@ public abstract class Verb implements Parcelable {
     public abstract String getDescription();
     public abstract String soundDirName();
     public abstract int getGroup();
+
+    public String getSubtitlesFirst(){
+        return null;
+    }
+
+    public String getSubtitlesSecond(){
+        return null;
+    }
 }

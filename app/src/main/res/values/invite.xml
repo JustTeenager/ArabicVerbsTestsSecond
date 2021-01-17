@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_invite">
+  <string name="description_invite" translatable="false">
         звать, призывать (у) - دَعَا\n
         urge, invite (u) - دَعَا
   </string>

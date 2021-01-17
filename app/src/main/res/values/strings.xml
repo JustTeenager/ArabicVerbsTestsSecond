@@ -1,4 +1,5 @@
 <resources>
+    <string name="imperative">Imperative</string>
     <string name="common_info">Common information</string>
     <string name="assimilated">Assimilated (similar to regular)</string>
     <string name="hollow">Hollow (empty)</string>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_trust">
+  <string name="description_trust" translatable="false">
        верить, доверять (и) - وَثِقَ\n 
        trust, believe (i) - وَثِقَ</string>
   <string-array name="trust">

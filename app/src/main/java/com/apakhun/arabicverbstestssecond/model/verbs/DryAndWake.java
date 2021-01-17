@@ -47,4 +47,14 @@ public class DryAndWake extends TimeVerb {
     public int getGroup(){
         return 1;
     }
+
+    @Override
+    public String getSubtitlesFirst(){
+        return getSubtitles(R.array.subtitles_dry);
+    }
+
+    @Override
+    public String getSubtitlesSecond(){
+        return getSubtitles(R.array.subtitles_wake);
+    }
 }

@@ -1,7 +1,6 @@
 package com.apakhun.arabicverbstestssecond.fragments;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.apakhun.arabicverbstestssecond.R;
-import com.apakhun.arabicverbstestssecond.Utils;
 import com.apakhun.arabicverbstestssecond.activities.MainActivity;
 import com.apakhun.arabicverbstestssecond.model.Tests;
 import com.apakhun.arabicverbstestssecond.viewmodel.TestsViewModel;
 import com.apakhun.arabicverbstestssecond.views.adapters.TestsRecyclerViewAdapter;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;

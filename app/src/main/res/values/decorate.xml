@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_decorate">
+  <string name="description_decorate" translatable="false">
         украшать (и) - زَانَ\n
         decorate (i) - زَانَ
     </string>

@@ -11,7 +11,6 @@ import androidx.lifecycle.LifecycleRegistry;
 import com.apakhun.arabicverbstestssecond.R;
 import com.apakhun.arabicverbstestssecond.fragments.MainFragment;
 import com.apakhun.arabicverbstestssecond.fragments.ParentFragment;
-import com.apakhun.arabicverbstestssecond.model.Tests;
 
 public class MainActivity extends AppCompatActivity {
 

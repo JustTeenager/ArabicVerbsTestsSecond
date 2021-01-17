@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_meet">
+  <string name="description_meet" translatable="false">
         встречать (a) - لَقِيَ\n 
         meet (a) - لَقِيَ</string>
   <string-array name="meet">

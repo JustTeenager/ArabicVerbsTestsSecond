@@ -110,6 +110,7 @@ public class Tests {
         private Set<Integer> congratulationsShowed = new HashSet<>();
         private Map<Integer, Integer> progressTrue = new HashMap<>();
         private Map<Integer, Integer> progressFalse = new HashMap<>();
+        //TODO поменять обратно на false
         private boolean unlockSecondWave = false;
         private boolean unlockThirdWave = false;
         private boolean unlockFourthWave = false;

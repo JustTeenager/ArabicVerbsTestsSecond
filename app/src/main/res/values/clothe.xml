@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="description_clothe">
+  <string name="description_clothe" translatable="false">
         одевать, покрывать (у) - كَسَا\n
         clothe (u) - كَسَا
   </string>

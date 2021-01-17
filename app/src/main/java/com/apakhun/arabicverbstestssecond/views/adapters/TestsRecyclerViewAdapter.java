@@ -175,19 +175,29 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
 //                        }
 //                    });
                 }
+                else if (viewHolder.getItemViewType() == DOUBLEWORD_VIEW_TYPE){
+                    DoubleWordHolder holder = (DoubleWordHolder) viewHolder;
+                    holder.expandableLayout.setEnabled(false);
+                    holder.vItemRow.setEnabled(false);
+                    holder.vItemRow.setBackgroundColor(App.getRes().getColor(R.color.colorTransparentGray));
+                    viewHolder.btnLock.setVisibility(View.VISIBLE);
+                    viewHolder.btnLock.setEnabled(true);
+                    viewHolder.btnSound.setVisibility(View.INVISIBLE);
+                    viewHolder.btnSound.setEnabled(false);
+                }
             }
 
             //TODO здесь лочатся и анлочатся холдеры
             if(progress.isUnlockSecondWave()){
-                if((position > 3) && (position < 8)){
+                if((position > 3) && (position < 9)){
                     unlockHolder(viewHolder, position);
                 }
 
-                if(progress.isUnlockThirdWave() && position > 7 && position < 11){
+                if(progress.isUnlockThirdWave() && position > 8 && position < 12){
                     unlockHolder(viewHolder, position);
                 }
 
-                if(progress.isUnlockFourthWave() && position > 10){
+                if(progress.isUnlockFourthWave() && position > 11){
                     unlockHolder(viewHolder, position);
                 }
         }
@@ -211,6 +221,17 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             holder.btnLock.setEnabled(false);
             holder.btnSound.setVisibility(View.VISIBLE);
             holder.btnSound.setEnabled(true);
+        }
+        else if (viewHolder.getItemViewType() == DOUBLEWORD_VIEW_TYPE){
+            DoubleWordHolder holder = (DoubleWordHolder) viewHolder;
+            holder.expandableLayout.setEnabled(true);
+            holder.vItemRow.setEnabled(true);
+            holder.vItemRow.setBackgroundColor(App.getRes().getColor(R.color.whiteTransparent));
+            holder.btnLock.setVisibility(View.INVISIBLE);
+            holder.btnLock.setEnabled(false);
+            holder.btnSound.setVisibility(View.VISIBLE);
+            holder.btnSound.setEnabled(true);
+            holder.btnSound.setImageResource(R.mipmap.two);
         }
     }
 
@@ -254,8 +275,8 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         public void bind(Verb verb,Tests.Progress progress,int position){
             this.verb=verb;
             this.progress=progress;
-            setupCommonSettings(position);
             tvVerb.setText(verb.getVerbText());
+            setupCommonSettings(position);
             frPic.setImage(verb.pictureResourceId());
 
             btnSound.setOnClickListener((v) -> Sounder.sound(verb.soundResourcePath() + "/1.mp3"));
@@ -380,9 +401,22 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
 
         DoubleWordHolder(@NonNull View itemView) {
                 super(itemView);
-                Log.d("tut_mipmap", String.valueOf(getAdapterPosition()));
+                pastTextView = itemView.findViewById(R.id.textView2);
+                presentTextView = itemView.findViewById(R.id.textView);
+                futureTextView = itemView.findViewById(R.id.textView3);
                 btnSound.setImageResource(R.mipmap.two);
-                //TODO тут меняются даблворды
+        }
+
+        @Override
+        protected void setupCommonSettings(int position) {
+            super.setupCommonSettings(position);
+            String arabic = verb.getDescription().split("-")[1];
+
+            tvVerb.setText(arabic);
+
+            pastTextView.setText(verb.getSubtitlesFirst());
+            presentTextView.setText(verb.getSubtitlesSecond());
+            futureTextView.setText(R.string.imperative);
         }
     }
 
