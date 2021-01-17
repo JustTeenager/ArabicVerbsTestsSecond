@@ -53,12 +53,13 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
         android:textColor="@color/colorDarkBlue"
         android:textSize="30sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/btnSound"
         app:layout_constraintStart_toEndOf="@+id/btnSound"
-        app:layout_constraintTop_toTopOf="@+id/btnSound" />
+        app:layout_constraintTop_toTopOf="@+id/btnSound"
+        android:gravity="center_horizontal" />
 
     <com.apakhun.arabicverbstestssecond.views.VerbImageFrameLayout
         android:layout_width="96dp"

@@ -15,7 +15,7 @@ public class SlackenAndPhilosophize extends TimeVerb {
 
     @Override
     public int pictureResourceId() {
-        return R.mipmap.return_image;
+        return R.mipmap.slacken_philosophize;
     }
 
     @Override

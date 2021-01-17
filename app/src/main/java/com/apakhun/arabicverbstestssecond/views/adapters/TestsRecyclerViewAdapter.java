@@ -1,5 +1,6 @@
 package com.apakhun.arabicverbstestssecond.views.adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.SparseBooleanArray;
@@ -15,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.interpolator.view.animation.LinearOutSlowInInterpolator;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.apakhun.arabicverbstestssecond.App;
@@ -42,6 +44,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     private SparseBooleanArray expandState = new SparseBooleanArray(Tests.TestsConfig.MAX_COUNT_VERBS);
     private Verb verbTmp;
     private Verb verbSound;
+    private RecyclerView recyclerView;
 
     private MainActivity activity;
 
@@ -177,6 +180,12 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
         return data.getCountVerbs();
     }
 
+    @Override
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        this.recyclerView =recyclerView;
+    }
+
     public class DefaultViewHolder extends RecyclerView.ViewHolder {
         public ImageButton btnSound;
         public ImageButton btnLock;
@@ -263,6 +272,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
 
 //            setIsRecyclable(false);
             expandableLayout.setInRecyclerView(true);
+
             expandableLayout.setInterpolator(interpolator);
         }
 
@@ -334,11 +344,13 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                 btnSound.setImageResource(R.mipmap.two);
         }
 
+        @SuppressLint("SetTextI18n")
         @Override
         protected void setupCommonSettings(int position) {
             super.setupCommonSettings(position);
-            String arabic = verb.getDescription().split("-")[1];
-
+            String arabicDoubleWord = verb.getDescription().split("-")[1];
+            String[] arabicArray = arabicDoubleWord.split(" ");
+            String arabic = arabicArray[1]+"\n"+arabicArray[2];
             tvVerb.setText(arabic);
 
             pastTextView.setText(verb.getSubtitlesFirst());
