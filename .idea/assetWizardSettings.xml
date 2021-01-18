@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\boss\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                                 <entry key="opacityPercent" value="60" />
                                               </map>
                                             </option>
@@ -69,7 +69,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\boss\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -133,7 +133,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\boss\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -145,8 +145,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\boss\Desktop\main_3.png" />
-                                                <entry key="paddingPercent" value="15" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\Desktop\Arabic verbs 3\main 3.png" />
+                                                <entry key="paddingPercent" value="10" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -181,9 +181,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="backgroundColor" value="f2f7f1" />
-                                      <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="C:\Users\boss\Desktop\main_3.png" />
-                                      <entry key="outputName" value="main_circle_icon" />
+                                      <entry key="imageAsset" value="C:\Users\Xiaomi\Desktop\Arabic verbs 3\main 3.png" />
+                                      <entry key="outputName" value="main_square_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -200,7 +199,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\boss\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -264,7 +263,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\boss\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="C:\Users\Xiaomi\AppData\Local\Temp\ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>

@@ -46,8 +46,6 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     private Verb verbSound;
     private RecyclerView recyclerView;
 
-    private RecyclerView recyclerView;
-
     private MainActivity activity;
 
     public TestsRecyclerViewAdapter(MainActivity activity) {
@@ -60,12 +58,6 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
     public void setData(Tests data) {
         this.data = data;
         notifyDataSetChanged();
-    }
-
-    @Override
-    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-        this.recyclerView=recyclerView;
     }
 
     @NonNull
@@ -120,7 +112,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                     viewHolder.btnLock.setVisibility(View.VISIBLE);
                     viewHolder.btnLock.setEnabled(true);
                     viewHolder.btnSound.setVisibility(View.INVISIBLE);
-                    viewHolder.btnSound.setEnabled(false);
+                   // viewHolder.btnSound.setEnabled(false);
                 }
             }
 
@@ -167,7 +159,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
             holder.btnLock.setVisibility(View.INVISIBLE);
             holder.btnLock.setEnabled(false);
             holder.btnSound.setVisibility(View.VISIBLE);
-            holder.btnSound.setEnabled(true);
+            //holder.btnSound.setEnabled(true);
             holder.btnSound.setImageResource(R.mipmap.two);
         }
     }
@@ -350,6 +342,7 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                 pastTextView = itemView.findViewById(R.id.textView2);
                 presentTextView = itemView.findViewById(R.id.textView);
                 futureTextView = itemView.findViewById(R.id.textView3);
+                btnSound.setEnabled(false);
                 btnSound.setImageResource(R.mipmap.two);
         }
 
