@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="description_dry_wake" translatable="false">
-        высыхать (а), бодрствовать (у) - يَقُظَ ،يَبِسَ\n
-        dry (а), wake (u)  - يَقُظَ ،يَبِسَ
+        высыхать (а), бодрствовать (у) - يَقُظَ يَبِسَ\n
+        dry (а), wake (u)  - يَقُظَ يَبِسَ
   </string>
   <string-array name="subtitles_dry">
-       <item>высыхать</item>
-        <item>dry</item>
+       <item>Высыхать</item>
+        <item>Dry</item>
   </string-array>
   <string-array name="subtitles_wake">
-    <item>бодрствовать</item>
-    <item>wake</item>
+    <item>Бодрствовать</item>
+    <item>Wake</item>
   </string-array>
   <string-array name="past_present_dry">
     <item>He dried # Он высыхал # يَبِسَ</item>

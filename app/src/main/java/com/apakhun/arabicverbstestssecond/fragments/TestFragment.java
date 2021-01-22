@@ -239,6 +239,7 @@ public class TestFragment extends ParentFragment {
 
         @Override
         public void onTrueAnswered() {
+            //TODO для открытия тестов
             progress.putSucceed(verb, time, test.getNumSucceedQuestions());
             //to test congratulation postcard
             //progress.putSucceed(verb, time, test.getNumQuestions());

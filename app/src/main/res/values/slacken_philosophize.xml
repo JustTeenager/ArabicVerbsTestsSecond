@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="description_slacken_philosophize" translatable="false">
-        быть ослабленным, слабеть (у), быть рассудительным, рассуждать (у) - نَهُوَ ،رَخُوَ\n
-        be slackened, slacken (u), be reasonable, philosophize (u)  - نَهُوَ ،رَخُوَ
+        быть ослабленным, слабеть (у), быть рассудительным, рассуждать (у) - نَهُوَ رَخُوَ\n
+        be slackened, slacken (u), be reasonable, philosophize (u)  - نَهُوَ رَخُوَ
   </string>
   <string-array name="subtitles_slacken">
-    <item>слабеть</item>
-    <item>slacken</item>
+    <item>Слабеть</item>
+    <item>Slacken</item>
   </string-array>
   <string-array name="subtitles_philosophize">
-    <item>рассуждать</item>
-    <item>philosophize</item>
+    <item>Рассуждать</item>
+    <item>Philosophize</item>
   </string-array>
   <string-array name="past_present_slacken">
     <item>He slackened # Он слабел # رَخُوَ</item>

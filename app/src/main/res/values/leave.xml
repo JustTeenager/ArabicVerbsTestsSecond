@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="description_leave" translatable="false">
-        оставлять (a) - وَدَعَ
+        оставлять (a) - وَدَعَ\n
         leave (a) - وَدَعَ
     </string>
   <string-array name="leave">

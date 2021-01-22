@@ -63,7 +63,7 @@ public class TestsFragment extends ParentFragment {
                 showCongratulations(getImageId(order));
                 progress.addCongrShowed(order);
 
-            } else if (progress.getPassedCount().length() - progress.getPassedCount().replace("2", "").length() == 4
+            } else if (progress.getPassedCount().length() - progress.getPassedCount().replace("2", "").length() == 5
                     && !progress.isCongrShowed(5)) {
                 order = 5;
                 showCongratulations(getImageId(order));
@@ -73,7 +73,7 @@ public class TestsFragment extends ParentFragment {
                 order = 6;
                 showCongratulations(getImageId(order));
                 progress.addCongrShowed(order);
-            } else if (progress.getPassedCount().length() - progress.getPassedCount().replace("4", "").length() == 4
+            } else if (progress.getPassedCount().length() - progress.getPassedCount().replace("4", "").length() == 3
                     && !progress.isCongrShowed(7)) {
                 order = 7;
                 showCongratulations(getImageId(order));

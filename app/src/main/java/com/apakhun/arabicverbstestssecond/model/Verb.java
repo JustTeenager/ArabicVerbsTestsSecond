@@ -67,7 +67,6 @@ public abstract class Verb implements Parcelable {
 
         public static int flag = -1;
 
-        //TODO поменять глаголы
         @Override
         public Verb createFromParcel(Parcel source) {
             switch (flag) {

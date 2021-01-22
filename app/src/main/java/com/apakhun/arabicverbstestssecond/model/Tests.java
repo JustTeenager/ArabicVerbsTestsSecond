@@ -34,7 +34,6 @@ public class Tests {
 
     public Tests(Progress progress) {
 
-        //TODO поменять порядок
         verbs = new ArrayList<>(TestsConfig.MAX_COUNT_VERBS);
         verbs.add(new Discover());
         verbs.add(new Leave());
@@ -63,10 +62,9 @@ public class Tests {
         private Set<Integer> congratulationsShowed = new HashSet<>();
         private Map<Integer, Integer> progressTrue = new HashMap<>();
         private Map<Integer, Integer> progressFalse = new HashMap<>();
-        //TODO поменять обратно на false
-        private boolean unlockSecondWave = true;
-        private boolean unlockThirdWave = true;
-        private boolean unlockFourthWave = true;
+        private boolean unlockSecondWave = false;
+        private boolean unlockThirdWave = false;
+        private boolean unlockFourthWave = false;
 
 
         private Integer toKey(Verb verb, TimeVerb.Time time) {
@@ -100,9 +98,9 @@ public class Tests {
                 }
                 if(i==3)
                     unlockSecondWave = true;
-                if(i==7)
+                if(i==8)
                     unlockThirdWave = true;
-                if(i==10)
+                if(i==11)
                     unlockFourthWave = true;
                 i++;
             }

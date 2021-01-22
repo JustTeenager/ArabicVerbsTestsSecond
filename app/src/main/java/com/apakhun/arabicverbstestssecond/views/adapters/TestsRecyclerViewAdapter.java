@@ -116,7 +116,6 @@ public class TestsRecyclerViewAdapter extends RecyclerView.Adapter<TestsRecycler
                 }
             }
 
-            //TODO здесь лочатся и анлочатся холдеры
             if(progress.isUnlockSecondWave()){
                 if((position > 3) && (position < 9)){
                     unlockHolder(viewHolder, position);
